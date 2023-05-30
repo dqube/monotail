@@ -1,0 +1,115 @@
+{
+  "name": "components",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/components/src",
+  "prefix": "tw",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/shared/components/ng-package.json",
+        "tailwindConfig": "libs/shared/components/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/shared/components/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/shared/components/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/shared/components/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/components/**/*.ts",
+          "libs/shared/components/**/*.html",
+          "libs/shared/components/alert/**/*.ts",
+          "libs/shared/components/alert/**/*.html",
+          "libs/shared/components/button/**/*.ts",
+          "libs/shared/components/button/**/*.html",
+          "libs/shared/components/accordion/**/*.ts",
+          "libs/shared/components/accordion/**/*.html",
+          "libs/shared/components/sidebar/**/*.ts",
+          "libs/shared/components/sidebar/**/*.html",
+          "libs/shared/components/dropdown/**/*.ts",
+          "libs/shared/components/dropdown/**/*.html",
+          "libs/shared/components/drawer/**/*.ts",
+          "libs/shared/components/drawer/**/*.html",
+          "libs/shared/components/modal/**/*.ts",
+          "libs/shared/components/modal/**/*.html",
+          "libs/shared/components/core/**/*.ts",
+          "libs/shared/components/core/**/*.html",
+          "libs/shared/components/avatar/**/*.ts",
+          "libs/shared/components/avatar/**/*.html",
+          "libs/shared/components/badge/**/*.ts",
+          "libs/shared/components/badge/**/*.html",
+          "libs/shared/components/breadcrumb/**/*.ts",
+          "libs/shared/components/breadcrumb/**/*.html",
+          "libs/shared/components/buttongroup/**/*.ts",
+          "libs/shared/components/buttongroup/**/*.html",
+          "libs/shared/components/checkbox/**/*.ts",
+          "libs/shared/components/checkbox/**/*.html",
+          "libs/shared/components/dots/**/*.ts",
+          "libs/shared/components/dots/**/*.html",
+          "libs/shared/components/divider/**/*.ts",
+          "libs/shared/components/divider/**/*.html",
+          "libs/shared/components/input/**/*.ts",
+          "libs/shared/components/input/**/*.html",
+          "libs/shared/components/upload/**/*.ts",
+          "libs/shared/components/upload/**/*.html",
+          "libs/shared/components/link/**/*.ts",
+          "libs/shared/components/link/**/*.html",
+          "libs/shared/components/menu/**/*.ts",
+          "libs/shared/components/menu/**/*.html",
+          "libs/shared/components/pagination/**/*.ts",
+          "libs/shared/components/pagination/**/*.html",
+          "libs/shared/components/progress/**/*.ts",
+          "libs/shared/components/progress/**/*.html",
+          "libs/shared/components/navbar/**/*.ts",
+          "libs/shared/components/navbar/**/*.html",
+          "libs/shared/components/radio/**/*.ts",
+          "libs/shared/components/radio/**/*.html",
+          "libs/shared/components/range/**/*.ts",
+          "libs/shared/components/range/**/*.html",
+          "libs/shared/components/spinners/**/*.ts",
+          "libs/shared/components/spinners/**/*.html",
+          "libs/shared/components/select/**/*.ts",
+          "libs/shared/components/select/**/*.html",
+          "libs/shared/components/switch/**/*.ts",
+          "libs/shared/components/switch/**/*.html",
+          "libs/shared/components/stepper/**/*.ts",
+          "libs/shared/components/stepper/**/*.html",
+          "libs/shared/components/tabs/**/*.ts",
+          "libs/shared/components/tabs/**/*.html",
+          "libs/shared/components/table/**/*.ts",
+          "libs/shared/components/table/**/*.html",
+          "libs/shared/components/textarea/**/*.ts",
+          "libs/shared/components/textarea/**/*.html",
+          "libs/shared/components/tooltip/**/*.ts",
+          "libs/shared/components/tooltip/**/*.html"
+        ]
+      }
+    }
+  }
+}

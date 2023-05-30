@@ -1,1 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* You can add global styles to this file, and also import other style files */
+// @import 'tailwindcss/base';
+// @import 'tailwindcss/components';
+// @import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  // @font-face {
+  //   font-family: 'Poppins';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   src: url('/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  // }
+
+  :root {
+    --color-text-base: 255, 255, 255;
+    --color-text-muted: 199, 210, 254;
+    --color-text-inverted: 79, 70, 229;
+    --color-fill: 67, 56, 202;
+    --color-button-accent: 255, 255, 255;
+    --color-button-accent-hover: 238, 242, 255;
+    --color-button-muted: 99, 102, 241;
+    // --primary: 101, 195, 200;
+    // --primary-focus: 63, 172, 177;
+    // --primary-content: 0, 57, 60;
+    // --secondary: 239, 159, 188;
+    // --secondary-focus: 228, 91, 140;
+    // --secondary-content: 80, 0, 29;
+    // --accent: 238, 175, 58;
+    // --accent-focus: 218, 148, 19;
+    // --accent-content: 59, 38, 0;
+    // --neutral: 41, 19, 52;
+    // --neutral-focus: 33, 15, 42;
+    // --neutral-content: 223, 175, 247;
+    // --base-100: 250, 247, 245;
+    // --base-200: 239, 234, 230;
+    // --base-300: 231, 226, 223;
+    // --base-content: 41, 19, 52;
+
+    // --info: 74, 168, 192;
+    // --info-content: 0, 43, 61;
+
+    // --success: 130, 50, 144;
+    // --success-content: 0, 51, 32;
+
+    // --warning: 238, 129, 51;
+    // --warning-content: 56, 40, 0;
+
+    // --error: 233, 63, 51;
+    // --error-content: 71, 0, 0;
+  }
+  .theme-swiss {
+    --color-text-base: 255, 255, 255;
+    --color-text-muted: 254, 202, 202;
+    --color-text-inverted: 220, 38, 38;
+    --color-fill: 185, 28, 28;
+    --color-button-accent: 255, 255, 255;
+    --color-button-accent-hover: 254, 242, 242;
+    --color-button-muted: 239, 68, 68;
+  }
+  .theme-neon {
+    --color-text-base: 17, 24, 2;
+    --color-text-muted: 47, 67, 6;
+    --color-text-inverted: 235, 250, 204;
+    --color-fill: 179, 255, 23;
+    --color-button-accent: 36, 52, 3;
+    --color-button-accent-hover: 55, 79, 5;
+    --color-button-muted: 212, 255, 122;
+  }
+
+  @layer utilities {
+    .rounded-box {
+      border-radius: var(--rounded-box, 1rem);
+    }
+    .rounded-t-box {
+      border-top-left-radius: var(--rounded-box, 1rem);
+      border-top-right-radius: var(--rounded-box, 1rem);
+    }
+    .rounded-b-box {
+      border-bottom-left-radius: var(--rounded-box, 1rem);
+      border-bottom-right-radius: var(--rounded-box, 1rem);
+    }
+    .rounded-l-box {
+      border-top-left-radius: var(--rounded-box, 1rem);
+      border-bottom-left-radius: var(--rounded-box, 1rem);
+    }
+    .rounded-r-box {
+      border-top-right-radius: var(--rounded-box, 1rem);
+      border-bottom-right-radius: var(--rounded-box, 1rem);
+    }
+    .rounded-br-box {
+      border-bottom-right-radius: var(--rounded-box, 1rem);
+    }
+    .rounded-tr-box {
+      border-top-right-radius: var(--rounded-box, 1rem);
+    }
+    .rounded-bl-box {
+      border-bottom-left-radius: var(--rounded-box, 1rem);
+    }
+    .rounded-tl-box {
+      border-top-left-radius: var(--rounded-box, 1rem);
+    }
+    .rounded-btn {
+      border-radius: var(--rounded-btn, 0.5rem);
+    }
+    .rounded-badge {
+      border-radius: var(--rounded-badge, 1.9rem);
+    }
+    .glass {
+      &,
+      &:hover,
+      &.btn-active {
+        border: none;
+        backdrop-filter: blur(var(--glass-blur, 40px));
+        background-color: transparent;
+        background-image: linear-gradient(
+            135deg,
+            rgb(255 255 255 / var(--glass-opacity, 30%)) 0%,
+            rgb(0 0 0 / 0%) 100%
+          ),
+          linear-gradient(
+            var(--glass-reflex-degree, 100deg),
+            rgb(255 255 255 / var(--glass-reflex-opacity, 10%)) 25%,
+            rgb(0 0 0 / 0%) 25%
+          );
+        box-shadow: 0 0 0 1px
+            rgb(255 255 255 / var(--glass-border-opacity, 10%)) inset,
+          0 0 0 2px rgb(0 0 0 / 5%);
+        text-shadow: 0 1px rgb(0 0 0 / var(--glass-text-shadow-opacity, 5%));
+      }
+    }
+    .min-h-6 {
+      min-height: 1.5rem;
+    }
+    .min-h-8 {
+      min-height: 2rem;
+    }
+    .min-h-12 {
+      min-height: 3rem;
+    }
+    .min-h-16 {
+      min-height: 4rem;
+    }
+    .no-animation {
+      --btn-focus-scale: 1;
+      --animation-btn: 0;
+      --animation-input: 0;
+    }
+    .tab-border-none {
+      --tab-border: 0px;
+    }
+    .tab-border {
+      --tab-border: 1px;
+    }
+    .tab-border-2 {
+      --tab-border: 2px;
+    }
+    .tab-border-3 {
+      --tab-border: 3px;
+    }
+    .tab-rounded-none {
+      --tab-radius: 0;
+    }
+    .tab-rounded-lg {
+      --tab-radius: 0.5rem;
+    }
+  }
+}

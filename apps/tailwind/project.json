@@ -15,7 +15,18 @@
         "main": "apps/tailwind/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/tailwind/tsconfig.app.json",
-        "assets": ["apps/tailwind/src/favicon.ico", "apps/tailwind/src/assets"],
+        "assets": [
+          {
+            "glob": "favicon.ico",
+            "input": "libs/shared/assets/src",
+            "output": ""
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/src/assets",
+            "output": "assets"
+          }
+        ],
         "styles": ["apps/tailwind/src/styles.scss"],
         "scripts": []
       },
@@ -83,12 +94,6 @@
           "ci": true,
           "codeCoverage": true
         }
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "tailwind:build"
       }
     }
   }
