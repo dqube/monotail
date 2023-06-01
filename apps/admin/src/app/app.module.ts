@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AccordionModule } from '@app/ui/accordion';
@@ -18,6 +19,8 @@ import { SpinnersModule } from '@app/ui/spinners';
 import { TableModule } from '@app/ui/table';
 import { TextareaModule } from '@app/ui/textarea';
 import { UploadModule } from '@app/ui/upload';
+import { FormlyModule } from '@form/core';
+import { FormlyTailwindModule } from '@form/tail';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 
@@ -44,6 +47,9 @@ import { NxWelcomeComponent } from './nx-welcome.component';
     RadioModule,
     TableModule,
     SidebarModule,
+    ReactiveFormsModule,
+    FormlyModule.forRoot(),
+    FormlyTailwindModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

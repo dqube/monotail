@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FORMLY_CONFIG, FormlyConfig, FormlyModule } from '@app/form/core';
+import { FORMLY_CONFIG, FormlyConfig, FormlyModule } from '@form/core';
 import { registerLibraryConfigReplacementExtension } from './preset-substitution.extension';
 
 @NgModule({

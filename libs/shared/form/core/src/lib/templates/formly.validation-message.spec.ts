@@ -1,5 +1,5 @@
 import { DebugElement } from '@angular/core';
-import { createFieldComponent } from '@app/form/core/testing';
+import { createFieldComponent } from '@form/core/testing';
 import { Subject, of } from 'rxjs';
 import { FormlyFieldConfig, FormlyModule } from '../core';
 

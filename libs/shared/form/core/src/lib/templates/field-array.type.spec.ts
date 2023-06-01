@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormArray } from '@angular/forms';
+import { FormlyFieldConfig } from '@form/core';
 import {
-  FormlyFieldConfig,
   FormlyInputModule,
   createFieldChangesSpy,
   createFieldComponent,
-} from '@app/form/core';
+} from '@form/core/testing';
 import { renderComponent as renderFormComponent } from '../components/formly.form.spec';
 import { FieldArrayType } from './field-array.type';
 

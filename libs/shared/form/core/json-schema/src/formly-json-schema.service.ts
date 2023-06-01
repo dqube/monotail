@@ -6,7 +6,7 @@ import {
   ɵgetFieldValue as getFieldValue,
   ɵhasKey as hasKey,
   ɵreverseDeepMerge as reverseDeepMerge,
-} from '@app/form/core';
+} from '@form/core';
 import { JSONSchema7, JSONSchema7Definition } from 'json-schema';
 import { tap } from 'rxjs/operators';
 

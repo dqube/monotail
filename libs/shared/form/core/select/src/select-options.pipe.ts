@@ -1,5 +1,5 @@
 import { OnDestroy, Pipe, PipeTransform } from '@angular/core';
-import { FormlyFieldConfig, FormlyFieldProps } from '@app/form/core';
+import { FormlyFieldConfig, FormlyFieldProps } from '@form/core';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { filter, map, tap } from 'rxjs/operators';
 

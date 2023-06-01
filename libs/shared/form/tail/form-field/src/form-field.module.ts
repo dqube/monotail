@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormlyModule } from '@app/form/core';
+import { FormlyModule } from '@form/core';
 import { FormlyWrapperFormField } from './form-field.wrapper';
 
 @NgModule({
@@ -20,4 +20,4 @@ import { FormlyWrapperFormField } from './form-field.wrapper';
     }),
   ],
 })
-export class FormlyBootstrapFormFieldModule {}
+export class FormlyFormFieldModule {}

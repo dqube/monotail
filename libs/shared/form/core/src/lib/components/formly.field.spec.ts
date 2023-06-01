@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 import { fakeAsync, tick } from '@angular/core/testing';
 import { FormControl, FormGroup } from '@angular/forms';
-import { FieldWrapper, FormlyFieldConfig } from '@app/form/core';
+import { FieldWrapper, FormlyFieldConfig } from '@form/core';
 import {
   FormlyFieldInput,
   FormlyInputModule,
@@ -14,7 +14,7 @@ import {
   createFieldChangesSpy,
   createFieldComponent,
   ɵCustomEvent,
-} from '@app/form/core/testing';
+} from '@form/core/testing';
 import { BehaviorSubject, timer } from 'rxjs';
 import { map, shareReplay, tap } from 'rxjs/operators';
 import { FormlyExtension, FormlyFieldConfigCache } from '../models';

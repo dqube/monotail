@@ -1,3 +1,7 @@
-# @app/form/core
+# shared-form-core
 
-Secondary entry point of `@app/form`. It can be used by importing from `@app/form/core`.
+This library was generated with [Nx](https://nx.dev).
+
+## Running unit tests
+
+Run `nx test shared-form-core` to execute the unit tests.

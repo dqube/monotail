@@ -1,24 +1,24 @@
 {
-  "name": "form",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/shared/form/src",
+  "name": "form-tail",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/form/tail/src",
   "prefix": "tw",
-  "tags": ["form"],
+  "tags": [],
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/angular:package",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/shared/form/ng-package.json",
-        "tailwindConfig": "libs/shared/form/tailwind.config.js"
+        "project": "libs/shared/form/tail/ng-package.json",
+        "tailwindConfig": "libs/shared/form/tail/tailwind.config.js"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/shared/form/tsconfig.lib.prod.json"
+          "tsConfig": "libs/shared/form/tail/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/shared/form/tsconfig.lib.json"
+          "tsConfig": "libs/shared/form/tail/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/shared/form/jest.config.ts",
+        "jestConfig": "libs/shared/form/tail/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -42,12 +42,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/shared/form/**/*.ts",
-          "libs/shared/form/**/*.html",
-          "libs/shared/form/core/**/*.ts",
-          "libs/shared/form/core/**/*.html",
-          "libs/shared/form/tw/**/*.ts",
-          "libs/shared/form/tw/**/*.html"
+          "libs/shared/form/tail/**/*.ts",
+          "libs/shared/form/tail/**/*.html"
         ]
       }
     }

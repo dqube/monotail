@@ -1,4 +1,4 @@
-import { FormlyFieldConfig } from '@app/form/core';
+import { FormlyFieldConfig } from '@form/core';
 import { of as observableOf, Subject } from 'rxjs';
 import { FormlyValueChangeEvent } from 'src/core/src/lib/models';
 import { FormlySelectOptionsPipe } from './select-options.pipe';

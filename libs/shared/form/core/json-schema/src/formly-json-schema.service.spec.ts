@@ -4,8 +4,8 @@ import {
   FieldArrayType,
   FormlyFieldConfig,
   FormlyFieldProps,
-} from '@app/form/core';
-import { FormlyInputModule, createComponent } from '@app/form/core/testing';
+} from '@form/core';
+import { FormlyInputModule, createComponent } from '@form/core/testing';
 import { JSONSchema7 } from 'json-schema';
 import { FormlyJsonschema } from './formly-json-schema.service';
 

@@ -1,5 +1,5 @@
 import { FormArray, FormControl, FormGroup } from '@angular/forms';
-import { FormlyFieldConfig } from '@app/form/core';
+import { FormlyFieldConfig } from '@form/core';
 import { registerControl, unregisterControl } from './utils';
 
 describe('registerControl', () => {

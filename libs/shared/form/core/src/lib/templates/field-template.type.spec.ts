@@ -1,4 +1,4 @@
-import { createFieldComponent as renderComponent } from '@app/form/core/testing';
+import { createFieldComponent as renderComponent } from '@form/core/testing';
 
 describe('Template Field Type', () => {
   it('should render template', () => {

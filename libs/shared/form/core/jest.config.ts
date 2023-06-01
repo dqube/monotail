@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'shared-form',
-  preset: '../../../jest.preset.js',
+  displayName: 'shared-form-core',
+  preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../coverage/libs/shared/form',
+  coverageDirectory: '../../../../coverage/libs/shared/form/core',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
