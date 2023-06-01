@@ -45,7 +45,9 @@
           "libs/shared/form/**/*.ts",
           "libs/shared/form/**/*.html",
           "libs/shared/form/core/**/*.ts",
-          "libs/shared/form/core/**/*.html"
+          "libs/shared/form/core/**/*.html",
+          "libs/shared/form/tw/**/*.ts",
+          "libs/shared/form/tw/**/*.html"
         ]
       }
     }

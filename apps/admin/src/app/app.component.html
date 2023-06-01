@@ -230,11 +230,98 @@
   <div class="px-6 pt-6 bg-white h-full overflow-y-auto  scrollbar-thin scrollbar-thumb-slate-50">
     <div class="h-[85vh] items-center">
 
-      <button tw-button nzType="primary">Primary Button</button>
+      <button type="" tw-button nzType="dashed">Button</button>
+      <button type="" tw-button>Button</button>
+      <button type="" tw-button nzColor="secondary">Button</button>
+      <button type="" tw-button nzShape="round">Button</button>
+      <button type="" tw-button nzShape="solid" nzColor="secondary">Button</button>
 
+      <button type="" tw-button nzShape="circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="mx-auto flex w-full max-w-sm flex-col gap-6">
+        <div class="flex flex-col items-center">
+          <h1 class="text-3xl font-semibold">Sign In</h1>
+          <p class="text-sm">Sign in to access your account</p>
+        </div>
+        <div class="form-group">
+          <div class="form-field group">
+            <label class="form-label group-focus-within:text-primary">Email address</label>
 
-      <!-- <span class="dark:text-white">Content</span> -->
+            <input placeholder="Enter your email address" type="email"
+              class="input max-w-full focus-within:border-primary" />
+            <label class="form-label">
+              <span class="form-label-alt group-focus-within:text-primary">Please enter a valid email.</span>
+            </label>
+          </div>
+          <div class="form-field group">
+            <label class="form-label group-focus-within:text-primary">Password</label>
+            <div class="form-control">
+              <input placeholder="Type here" type="password" class="input max-w-full focus-within:border-primary" />
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="form-control justify-between">
+              <div class="flex gap-2">
+                <input type="checkbox" class="checkbox hover:border-primary" />
+                <a href="#">Remember me</a>
+              </div>
+              <label class="form-label">
+                <a class="link link-underline-hover link-primary text-sm">Forgot your password?</a>
+              </label>
+            </div>
+          </div>
+          <div class="form-field pt-5">
+            <div class="form-control justify-between">
+              <button type="button" class="btn btn-primary w-full">Sign in</button>
+            </div>
+          </div>
 
+          <div class="form-field">
+            <div class="form-control justify-center">
+              <a class="link link-underline-hover link-primary text-sm">Don't have an account yet? Sign up.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="bg-gray-2 rounded-xl">
+        <div class="p-8 shadow-lg">
+          <form class="space-y-4">
+            <div class="w-full">
+              <label class="sr-only" for="name">Name</label>
+              <input class="input input-solid max-w-full" placeholder="Name" type="text" id="name" />
+            </div>
+
+            <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+              <div>
+                <label class="sr-only" for="email">Email</label>
+                <input class="input input-solid max-w-full" placeholder="Email address" type="email" id="email" />
+              </div>
+
+              <div>
+                <label class="sr-only" for="phone">Phone</label>
+                <input class="input input-solid max-w-full" placeholder="Phone Number" type="tel" id="phone" />
+              </div>
+            </div>
+
+            <div class="w-full">
+              <label class="sr-only" for="message">Message</label>
+
+              <textarea class="textarea textarea-solid max-w-full" placeholder="Message" rows="8"
+                id="message"></textarea>
+            </div>
+
+            <div class="mt-4">
+              <button type="button" class="rounded-lg btn btn-primary btn-block">Send Enquiry</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- <span class="dark:text-white">Content</span>
+border-primary
       <tw-textarea></tw-textarea>
       <tw-accordion></tw-accordion>
       <tw-alert></tw-alert>
@@ -248,7 +335,7 @@
       <tw-link></tw-link>
       <tw-checkbox></tw-checkbox>
       <tw-radio></tw-radio>
-      <tw-table></tw-table>
+      <tw-table></tw-table> -->
       <router-outlet></router-outlet>
     </div>
   </div>

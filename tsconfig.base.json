@@ -17,6 +17,7 @@
     "paths": {
       "@app/form": ["libs/shared/form/src/index.ts"],
       "@app/form/core": ["libs/shared/form/core/src/index.ts"],
+      "@app/form/tw": ["libs/shared/form/tw/src/index.ts"],
       "@app/shared/assets": ["libs/shared/assets/src/index.ts"],
       "@app/ui": ["libs/shared/components/src/index.ts"],
       "@app/ui/accordion": ["libs/shared/components/accordion/src/index.ts"],
