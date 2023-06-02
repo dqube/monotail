@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { SidebarModule } from '@app/layout/sidebar';
 import { FormlyModule } from '@form/core';
 import { FormlyTailwindModule } from '@form/tail';
 import { AppComponent } from './app.component';
@@ -13,7 +14,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
-
+    SidebarModule,
     ReactiveFormsModule,
     FormlyModule.forRoot({
       validationMessages: [
