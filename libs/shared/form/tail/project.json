@@ -43,7 +43,13 @@
       "options": {
         "lintFilePatterns": [
           "libs/shared/form/tail/**/*.ts",
-          "libs/shared/form/tail/**/*.html"
+          "libs/shared/form/tail/**/*.html",
+          "libs/shared/form/tail/input/**/*.ts",
+          "libs/shared/form/tail/input/**/*.html",
+          "libs/shared/form/tail/form-field/**/*.ts",
+          "libs/shared/form/tail/form-field/**/*.html",
+          "libs/shared/form/tail/select/**/*.ts",
+          "libs/shared/form/tail/select/**/*.html"
         ]
       }
     }

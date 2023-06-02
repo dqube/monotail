@@ -52,8 +52,13 @@
       "@app/ui/tooltip": ["libs/shared/components/tooltip/src/index.ts"],
       "@app/ui/upload": ["libs/shared/components/upload/src/index.ts"],
       "@form/core": ["libs/shared/form/core/src/index.ts"],
+      "@form/core/select": ["libs/shared/form/core/select/src/index.ts"],
       "@form/tail": ["libs/shared/form/tail/src/index.ts"],
-      "@form/tail/form-field": ["libs/shared/form/tail/form-field/src/index.ts"]
+      "@form/tail/form-field": [
+        "libs/shared/form/tail/form-field/src/index.ts"
+      ],
+      "@form/tail/input": ["libs/shared/form/tail/input/src/index.ts"],
+      "@form/tail/select": ["libs/shared/form/tail/select/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

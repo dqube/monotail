@@ -20,4 +20,4 @@ import { FormlyWrapperFormField } from './form-field.wrapper';
     }),
   ],
 })
-export class FormlyFormFieldModule {}
+export class FormlyTailwindFormFieldModule {}

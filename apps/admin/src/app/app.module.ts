@@ -48,7 +48,11 @@ import { NxWelcomeComponent } from './nx-welcome.component';
     TableModule,
     SidebarModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot(),
+    FormlyModule.forRoot({
+      validationMessages: [
+        { name: 'required', message: 'This field is required' },
+      ],
+    }),
     FormlyTailwindModule,
   ],
   providers: [],

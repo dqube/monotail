@@ -42,7 +42,9 @@
       "options": {
         "lintFilePatterns": [
           "libs/shared/form/core/**/*.ts",
-          "libs/shared/form/core/**/*.html"
+          "libs/shared/form/core/**/*.html",
+          "libs/shared/form/core/select/**/*.ts",
+          "libs/shared/form/core/select/**/*.html"
         ]
       }
     }
