@@ -49,7 +49,15 @@
           "libs/shared/form/tail/form-field/**/*.ts",
           "libs/shared/form/tail/form-field/**/*.html",
           "libs/shared/form/tail/select/**/*.ts",
-          "libs/shared/form/tail/select/**/*.html"
+          "libs/shared/form/tail/select/**/*.html",
+          "libs/shared/form/tail/checkbox/**/*.ts",
+          "libs/shared/form/tail/checkbox/**/*.html",
+          "libs/shared/form/tail/radio/**/*.ts",
+          "libs/shared/form/tail/radio/**/*.html",
+          "libs/shared/form/tail/toggle/**/*.ts",
+          "libs/shared/form/tail/toggle/**/*.html",
+          "libs/shared/form/tail/textarea/**/*.ts",
+          "libs/shared/form/tail/textarea/**/*.html"
         ]
       }
     }

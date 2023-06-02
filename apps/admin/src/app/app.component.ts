@@ -38,12 +38,27 @@ export class AppComponent {
       type: 'select',
       defaultValue: 'milky_way',
       props: {
-        label: 'Favorite Candy (initialized via default value',
+        label: 'Favorite Candy (initialized via default value)',
         options: [
           { label: 'Snickers', value: 'snickers' },
           { label: 'Baby Ruth', value: 'baby_ruth' },
           { label: 'Milky Way', value: 'milky_way' },
         ],
+      },
+    },
+    {
+      key: 'Checkbox',
+      type: 'checkbox',
+      props: {
+        label: 'Accept terms',
+        description: 'In order to proceed, please accept terms',
+        pattern: 'true',
+        required: true,
+      },
+      validation: {
+        messages: {
+          pattern: 'Please accept the terms',
+        },
       },
     },
   ];
