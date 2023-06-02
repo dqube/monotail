@@ -3,6 +3,7 @@ import { FormGroup } from '@angular/forms';
 import { FormlyFieldConfig } from '@form/core';
 interface auth {
   email: string;
+  firstName?: string;
 }
 @Component({
   selector: 'app-root',
@@ -34,6 +35,20 @@ export class AppComponent {
       },
     },
     {
+      key: 'age',
+      type: 'input',
+      props: {
+        label: 'Age',
+        type: 'number',
+        max: 99999,
+        min: 0,
+        pattern: '\\d{5}',
+        placeholder: 'Enter your age',
+        required: true,
+        description: 'enter your age',
+      },
+    },
+    {
       key: 'candy',
       type: 'select',
       defaultValue: 'milky_way',
@@ -47,20 +62,45 @@ export class AppComponent {
       },
     },
     {
-      key: 'Checkbox',
-      type: 'checkbox',
-      props: {
-        label: 'Accept terms',
-        description: 'In order to proceed, please accept terms',
-        pattern: 'true',
-        required: true,
-      },
-      validation: {
-        messages: {
-          pattern: 'Please accept the terms',
+      fieldGroupClassName: 'grid grid-cols-3 gap-4',
+      fieldGroup: [
+        {
+          className: 'col-6',
+          type: 'input',
+          key: 'firstName',
+          props: {
+            label: 'First Name',
+          },
         },
-      },
+        {
+          className: 'col-6',
+          type: 'input',
+          key: 'lastName',
+          props: {
+            label: 'Last Name',
+          },
+          expressions: {
+            'props.disabled': '!model.firstName',
+          },
+        },
+        {
+          key: 'Checkbox',
+          type: 'checkbox',
+          props: {
+            label: 'Accept terms',
+            description: 'In order to proceed, please accept terms',
+            pattern: 'true',
+            required: true,
+          },
+          validation: {
+            messages: {
+              pattern: 'Please accept the terms',
+            },
+          },
+        },
+      ],
     },
+
     {
       key: 'Radio',
       type: 'radio',

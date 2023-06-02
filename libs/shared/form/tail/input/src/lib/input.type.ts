@@ -32,15 +32,16 @@ export interface FormlyInputFieldConfig extends FormlyFieldConfig<InputProps> {
         [formControl]="formControl"
         [formlyAttributes]="field"
         [class.border-error]="showError"
-        class="input max-w-full focus-within:border-primary"
+        class="input input-block focus-within:border-primary"
       />
       <ng-template #numberTmp>
         <input
-          type="number"
+          placeholder="Type here"
+          [type]="type"
           [formControl]="formControl"
-          class="form-control"
           [formlyAttributes]="field"
-          [class.is-invalid]="showError"
+          [class.border-error]="showError"
+          class="input focus-within:border-primary"
         />
       </ng-template>
     </ng-template>
