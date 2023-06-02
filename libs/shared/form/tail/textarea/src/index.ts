@@ -1,1 +1,1 @@
-export * from './lib/textarea.module';
+export * from './lib/public_api';

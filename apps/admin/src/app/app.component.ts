@@ -61,6 +61,34 @@ export class AppComponent {
         },
       },
     },
+    {
+      key: 'Radio',
+      type: 'radio',
+      props: {
+        label: 'Radio',
+        placeholder: 'Placeholder',
+        description: 'Description',
+        required: true,
+        options: [
+          { value: 1, label: 'Option 1' },
+          { value: 2, label: 'Option 2' },
+          { value: 3, label: 'Option 3' },
+          { value: 4, label: 'Option 4', disabled: true },
+        ],
+      },
+    },
+    {
+      key: 'Textarea',
+      type: 'textarea',
+      props: {
+        label: 'Textarea',
+        placeholder: 'Placeholder',
+        description: 'Description',
+        required: true,
+        cols: 1,
+        rows: 5,
+      },
+    },
   ];
 
   onSubmit() {
