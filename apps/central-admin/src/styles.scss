@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/inter/Inter-Regular.woff');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/urbanist/Urbanist-Regular.woff2');
+}
+/* You can add global styles to this file, and also import other style files */
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  // body {
+  //   font-family: Poppins;
+  // }
+}

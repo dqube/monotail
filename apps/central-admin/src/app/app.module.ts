@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormlyModule } from '@app/form/core';
 import { FormlyTailwindModule } from '@app/form/tail';
+import { SidebarModule } from '@app/ui/sidebar';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
-import { SidebarModule} from '@app/ui/sidebar'
 
 import { HttpClientModule } from '@angular/common/http';
 import { SvgIconModule } from '@app/icon';
