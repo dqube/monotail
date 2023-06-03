@@ -10,7 +10,7 @@ import { appRoutes } from './app.routes';
 
 import { HttpClientModule } from '@angular/common/http';
 import { SvgIconModule } from '@app/icon';
-import { IconPreloaderModule } from '@app/icon/loader';
+import { SharedUiIconPreloaderModule } from '@app/icon/loader';
 import { NxWelcomeComponent } from './nx-welcome.component';
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -27,7 +27,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
     FormlyTailwindModule,
     HttpClientModule,
     SvgIconModule.forRoot(),
-    IconPreloaderModule.forRoot({
+    SharedUiIconPreloaderModule.forRoot({
       configUrl: './assets/json/icons.json',
     }),
   ],

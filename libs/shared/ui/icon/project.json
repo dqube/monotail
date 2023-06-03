@@ -1,0 +1,38 @@
+{
+  "name": "icon",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/ui/icon/src",
+  "prefix": "tw",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/shared/ui/icon/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/shared/ui/icon/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/shared/ui/icon/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/ui/icon/**/*.ts",
+          "libs/shared/ui/icon/**/*.html",
+          "libs/shared/ui/icon/loader/**/*.ts",
+          "libs/shared/ui/icon/loader/**/*.html"
+        ]
+      }
+    }
+  }
+}
