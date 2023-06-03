@@ -1,4 +1,4 @@
-import { FormlyConfig, FormlyFormBuilder } from '@form/core';
+import { FormlyConfig, FormlyFormBuilder } from '@app/form/core';
 import { FieldExpressionExtension } from '../../src/lib/extensions';
 import { CoreExtension } from '../../src/lib/extensions/core/core';
 import { FieldFormExtension } from '../../src/lib/extensions/field-form/field-form';

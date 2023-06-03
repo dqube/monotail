@@ -6,7 +6,7 @@ import {
   FieldTypeConfig,
   FieldWrapper,
   FormlyModule,
-} from '@form/core';
+} from '@app/form/core';
 
 @Component({
   selector: 'formly-type-input',

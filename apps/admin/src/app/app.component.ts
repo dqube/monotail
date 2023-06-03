@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { FormlyFieldConfig } from '@form/core';
+import { FormlyFieldConfig } from '@app/form/core';
 interface auth {
   email: string;
   firstName?: string;

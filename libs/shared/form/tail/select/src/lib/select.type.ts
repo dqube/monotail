@@ -9,9 +9,9 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 import { SelectControlValueAccessor } from '@angular/forms';
-import { FieldTypeConfig, FormlyFieldConfig } from '@form/core';
-import { FormlyFieldSelectProps } from '@form/core/select';
-import { FieldType, FormlyFieldProps } from '@form/tail/form-field';
+import { FieldTypeConfig, FormlyFieldConfig } from '@app/form/core';
+import { FormlyFieldSelectProps } from '@app/form/core/select';
+import { FieldType, FormlyFieldProps } from '@app/form/tail/form-field';
 import { take } from 'rxjs/operators';
 
 interface SelectProps extends FormlyFieldProps, FormlyFieldSelectProps {

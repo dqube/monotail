@@ -3,8 +3,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { SidebarModule } from '@app/layout/sidebar';
-import { FormlyModule } from '@form/core';
-import { FormlyTailwindModule } from '@form/tail';
+import { FormlyModule } from '@app/form/core';
+import { FormlyTailwindModule } from '@app/form/tail';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 

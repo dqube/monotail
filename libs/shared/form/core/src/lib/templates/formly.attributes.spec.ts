@@ -1,7 +1,7 @@
 import { fakeAsync, tick } from '@angular/core/testing';
 import { FormControl } from '@angular/forms';
-import { FormlyFieldConfig } from '@form/core';
-import { createComponent, ɵCustomEvent } from '@form/core/testing';
+import { FormlyFieldConfig } from '@app/form/core';
+import { createComponent, ɵCustomEvent } from '@app/form/core/testing';
 
 const renderComponent = (
   field: FormlyFieldConfig,

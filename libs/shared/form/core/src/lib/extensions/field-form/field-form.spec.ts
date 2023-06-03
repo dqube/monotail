@@ -4,7 +4,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
-import { createBuilder } from '@form/core/testing';
+import { createBuilder } from '@app/form/core/testing';
 import { FormlyFieldConfigCache } from '../../models';
 
 function buildField({

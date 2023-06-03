@@ -3,7 +3,7 @@ import {
   Component,
   EventEmitter,
 } from '@angular/core';
-import { FormlyFieldConfig } from '@form/core';
+import { FormlyFieldConfig } from '@app/form/core';
 import { Subscription } from 'rxjs';
 
 // Source copied from https://github.com/cnunciato/ng2-mock-component

@@ -1,6 +1,6 @@
-import { FormlyFieldConfig } from '@form/core';
-import { createFieldComponent, ɵCustomEvent } from '@form/core/testing';
-import { FormlyBootstrapRadioModule } from '@form/tail/radio';
+import { FormlyFieldConfig } from '@app/form/core';
+import { createFieldComponent, ɵCustomEvent } from '@app/form/core/testing';
+import { FormlyBootstrapRadioModule } from '@app/form/tail/radio';
 
 const renderComponent = (field: FormlyFieldConfig) => {
   return createFieldComponent(field, {

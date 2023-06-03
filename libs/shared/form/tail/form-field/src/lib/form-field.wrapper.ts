@@ -5,7 +5,7 @@ import {
   FormlyFieldProps as CoreFormlyFieldProps,
   FieldWrapper,
   FormlyFieldConfig,
-} from '@form/core';
+} from '@app/form/core';
 
 export interface FormlyFieldProps extends CoreFormlyFieldProps {
   hideRequiredMarker?: boolean;

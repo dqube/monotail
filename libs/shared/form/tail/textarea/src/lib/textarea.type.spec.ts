@@ -1,6 +1,6 @@
-import { FormlyFieldConfig } from '@form/core';
-import { createFieldComponent, ɵCustomEvent } from '@form/core/testing';
-import { FormlyBootstrapTextAreaModule } from '@form/tail/textarea';
+import { FormlyFieldConfig } from '@app/form/core';
+import { createFieldComponent, ɵCustomEvent } from '@app/form/core/testing';
+import { FormlyBootstrapTextAreaModule } from '@app/form/tail/textarea';
 
 const renderComponent = (field: FormlyFieldConfig) => {
   return createFieldComponent(field, {

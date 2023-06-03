@@ -1,6 +1,6 @@
-import { FormlyFieldConfig } from '@form/core';
-import { createFieldComponent, ɵCustomEvent } from '@form/core/testing';
-import { FormlyTailwindSelectModule } from '@form/tail/select';
+import { FormlyFieldConfig } from '@app/form/core';
+import { createFieldComponent, ɵCustomEvent } from '@app/form/core/testing';
+import { FormlyTailwindSelectModule } from '@app/form/tail/select';
 import { of } from 'rxjs';
 
 const renderComponent = (field: FormlyFieldConfig) => {

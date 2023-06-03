@@ -5,7 +5,7 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
-import { FieldType as CoreFieldType, FormlyFieldConfig } from '@form/core';
+import { FieldType as CoreFieldType, FormlyFieldConfig } from '@app/form/core';
 
 @Directive()
 export abstract class FieldType<

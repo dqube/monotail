@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { FormlyFieldInput } from '@form/core/testing';
+import { FormlyFieldInput } from '@app/form/core/testing';
 import { FieldType, FieldWrapper } from '../core';
 import { FormlyConfig } from './formly.config';
 

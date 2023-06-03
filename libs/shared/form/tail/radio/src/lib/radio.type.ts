@@ -2,8 +2,8 @@
 /* eslint-disable @angular-eslint/component-selector */
 import { ChangeDetectionStrategy, Component, Type } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { FieldTypeConfig, FormlyFieldConfig } from '@form/core';
-import { FieldType, FormlyFieldProps } from '@form/tail/form-field';
+import { FieldTypeConfig, FormlyFieldConfig } from '@app/form/core';
+import { FieldType, FormlyFieldProps } from '@app/form/tail/form-field';
 
 interface RadioProps extends FormlyFieldProps {
   formCheck?: 'default' | 'inline';

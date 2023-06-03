@@ -1,8 +1,8 @@
 /* eslint-disable @angular-eslint/component-class-suffix */
 /* eslint-disable @angular-eslint/component-selector */
 import { ChangeDetectionStrategy, Component, Type } from '@angular/core';
-import { FieldTypeConfig, FormlyFieldConfig } from '@form/core';
-import { FieldType, FormlyFieldProps } from '@form/tail/form-field';
+import { FieldTypeConfig, FormlyFieldConfig } from '@app/form/core';
+import { FieldType, FormlyFieldProps } from '@app/form/tail/form-field';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface InputProps extends FormlyFieldProps {}

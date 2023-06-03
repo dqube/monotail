@@ -1,10 +1,10 @@
-import { FormlyFieldConfig } from '@form/core';
+import { FormlyFieldConfig } from '@app/form/core';
 import {
   FormlyInputModule,
   createBuilder,
   createFieldComponent,
   mockComponent,
-} from '@form/core/testing';
+} from '@app/form/core/testing';
 import { Subject } from 'rxjs';
 import { FormlyFieldConfigCache } from '../../models';
 

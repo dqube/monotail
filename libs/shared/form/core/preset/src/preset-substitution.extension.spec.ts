@@ -1,5 +1,8 @@
-import { FORMLY_CONFIG, FormlyConfig, FormlyFieldConfig } from '@form/core';
-import { createFieldComponent, FormlyInputModule } from '@form/core/testing';
+import { FORMLY_CONFIG, FormlyConfig, FormlyFieldConfig } from '@app/form/core';
+import {
+  createFieldComponent,
+  FormlyInputModule,
+} from '@app/form/core/testing';
 import { registerLibraryConfigReplacementExtension } from './preset-substitution.extension';
 
 function renderComponent(field: FormlyFieldConfig) {

@@ -1,5 +1,5 @@
 {
-  "name": "form-tail",
+  "name": "form/tail",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared/form/tail/src",
   "prefix": "tw",

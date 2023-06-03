@@ -25,18 +25,18 @@
       "@app/lookup": ["libs/shared/lookup/src/index.ts"],
       "@app/shared/assets": ["libs/shared/assets/src/index.ts"],
       "@app/shared/environments": ["libs/shared/environments/src/index.ts"],
-      "@form/core": ["libs/shared/form/core/src/index.ts"],
-      "@form/core/select": ["libs/shared/form/core/select/src/index.ts"],
-      "@form/tail": ["libs/shared/form/tail/src/index.ts"],
-      "@form/tail/checkbox": ["libs/shared/form/tail/checkbox/src/index.ts"],
-      "@form/tail/form-field": [
+      "@app/form/core": ["libs/shared/form/core/src/index.ts"],
+      "@app/form/core/select": ["libs/shared/form/core/select/src/index.ts"],
+      "@app/form/tail": ["libs/shared/form/tail/src/index.ts"],
+      "@app/form/tail/checkbox": ["libs/shared/form/tail/checkbox/src/index.ts"],
+      "@app/form/tail/form-field": [
         "libs/shared/form/tail/form-field/src/index.ts"
       ],
-      "@form/tail/input": ["libs/shared/form/tail/input/src/index.ts"],
-      "@form/tail/radio": ["libs/shared/form/tail/radio/src/index.ts"],
-      "@form/tail/select": ["libs/shared/form/tail/select/src/index.ts"],
-      "@form/tail/textarea": ["libs/shared/form/tail/textarea/src/index.ts"],
-      "@form/tail/toggle": ["libs/shared/form/tail/toggle/src/index.ts"]
+      "@app/form/tail/input": ["libs/shared/form/tail/input/src/index.ts"],
+      "@app/form/tail/radio": ["libs/shared/form/tail/radio/src/index.ts"],
+      "@app/form/tail/select": ["libs/shared/form/tail/select/src/index.ts"],
+      "@app/form/tail/textarea": ["libs/shared/form/tail/textarea/src/index.ts"],
+      "@app/form/tail/toggle": ["libs/shared/form/tail/toggle/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

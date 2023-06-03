@@ -1,11 +1,11 @@
 import { fakeAsync, tick } from '@angular/core/testing';
 import { FormArray, FormGroup } from '@angular/forms';
-import { FormlyFieldConfig, FormlyFormOptions } from '@form/core';
+import { FormlyFieldConfig, FormlyFormOptions } from '@app/form/core';
 import {
   FormlyInputModule,
   createComponent,
   ɵCustomEvent,
-} from '@form/core/testing';
+} from '@app/form/core/testing';
 
 type IFormlyFormInputs = Partial<{
   form: FormGroup | FormArray;

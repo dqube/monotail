@@ -5,7 +5,7 @@ import {
   ValidationErrors,
   Validators,
 } from '@angular/forms';
-import { createBuilder } from '@form/core/testing';
+import { createBuilder } from '@app/form/core/testing';
 import { of } from 'rxjs';
 import { FormlyFieldConfigCache } from '../../models';
 

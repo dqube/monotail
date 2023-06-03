@@ -3,7 +3,7 @@ import {
   FormlyExtension,
   FormlyFieldConfig,
   ɵreverseDeepMerge,
-} from '@form/core';
+} from '@app/form/core';
 export class PresetSubstitutionExtension implements FormlyExtension {
   constructor(private formlyConfig: FormlyConfig) {}
 

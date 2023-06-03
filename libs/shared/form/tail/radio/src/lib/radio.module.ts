@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormlyModule } from '@form/core';
-import { FormlySelectModule } from '@form/core/select';
+import { FormlyModule } from '@app/form/core';
+import { FormlySelectModule } from '@app/form/core/select';
 
-import { FormlyTailwindFormFieldModule } from '@form/tail/form-field';
+import { FormlyTailwindFormFieldModule } from '@app/form/tail/form-field';
 import { FormlyFieldRadio } from './radio.type';
 
 @NgModule({

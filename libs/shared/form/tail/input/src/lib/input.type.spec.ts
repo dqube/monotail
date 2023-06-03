@@ -1,6 +1,6 @@
-import { FormlyFieldConfig } from '@form/core';
-import { createFieldComponent, ɵCustomEvent } from '@form/core/testing';
-import { FormlyTailwindInputModule } from '@form/tail/input';
+import { FormlyFieldConfig } from '@app/form/core';
+import { createFieldComponent, ɵCustomEvent } from '@app/form/core/testing';
+import { FormlyTailwindInputModule } from '@app/form/tail/input';
 
 const renderComponent = (field: FormlyFieldConfig) => {
   return createFieldComponent(field, {

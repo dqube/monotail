@@ -1,6 +1,6 @@
-import { FormlyFieldConfig } from '@form/core';
-import { createFieldComponent } from '@form/core/testing';
-import { FormlyFormFieldModule } from '@form/tail/form-field';
+import { FormlyFieldConfig } from '@app/form/core';
+import { createFieldComponent } from '@app/form/core/testing';
+import { FormlyFormFieldModule } from '@app/form/tail/form-field';
 
 const renderComponent = (field: FormlyFieldConfig) => {
   return createFieldComponent(field, {

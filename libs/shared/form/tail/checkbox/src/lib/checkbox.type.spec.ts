@@ -1,6 +1,6 @@
-import { FormlyFieldConfig } from '@form/core';
-import { createFieldComponent, ɵCustomEvent } from '@form/core/testing';
-import { FormlyBootstrapCheckboxModule } from '@form/tail/checkbox';
+import { FormlyFieldConfig } from '@app/form/core';
+import { createFieldComponent, ɵCustomEvent } from '@app/form/core/testing';
+import { FormlyBootstrapCheckboxModule } from '@app/form/tail/checkbox';
 
 const renderComponent = (field: FormlyFieldConfig) => {
   return createFieldComponent(field, {

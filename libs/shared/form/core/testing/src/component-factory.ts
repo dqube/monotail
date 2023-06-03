@@ -7,7 +7,7 @@ import {
   FormlyFieldConfig,
   FormlyFormBuilder,
   FormlyModule,
-} from '@form/core';
+} from '@app/form/core';
 
 function setInputs<T>(
   fixture: ComponentFixture<T>,

@@ -1,5 +1,5 @@
 {
-  "name": "form-core",
+  "name": "form/core",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared/form/core/src",
   "prefix": "tw",

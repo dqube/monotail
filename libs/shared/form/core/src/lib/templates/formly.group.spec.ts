@@ -1,4 +1,4 @@
-import { createFieldComponent as renderComponent } from '@form/core/testing';
+import { createFieldComponent as renderComponent } from '@app/form/core/testing';
 
 describe('Group Field Type', () => {
   it('should render fieldGroup', () => {

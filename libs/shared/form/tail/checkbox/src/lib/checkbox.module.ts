@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormlyModule } from '@form/core';
+import { FormlyModule } from '@app/form/core';
 
-import { FormlyTailwindFormFieldModule } from '@form/tail/form-field';
+import { FormlyTailwindFormFieldModule } from '@app/form/tail/form-field';
 
 import { FormlyFieldCheckbox } from './checkbox.type';
 
