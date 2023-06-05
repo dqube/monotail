@@ -24,14 +24,14 @@
     @apply block text-sm font-medium mb-2 dark:text-white;
   }
 
-  .ti-form-label {
+  .form-label {
     @apply block text-sm font-medium mb-2 dark:text-white;
   }
 
-  [type="checkbox"]:checked:hover,
-  [type="checkbox"]:checked:focus,
-  [type="radio"]:checked:hover,
-  [type="radio"]:checked:focus {
+  [type='checkbox']:checked:hover,
+  [type='checkbox']:checked:focus,
+  [type='radio']:checked:hover,
+  [type='radio']:checked:focus {
     @apply bg-primary;
   }
 
@@ -74,13 +74,13 @@
     }
   }
 
-  .circular-filepond.filepond--root[data-style-panel-layout~="circle"]
+  .circular-filepond.filepond--root[data-style-panel-layout~='circle']
     .filepond--file
-    [data-align*="left"] {
+    [data-align*='left'] {
     @apply left-[40%];
   }
 
-  .circular-filepond.filepond--root[data-style-panel-layout~="circle"] {
+  .circular-filepond.filepond--root[data-style-panel-layout~='circle'] {
     @apply w-32 h-32 my-0 mx-auto #{!important};
   }
 

@@ -57,7 +57,7 @@
 
         <!-- Start::slide -->
         <li class="slide">
-          <a href="widgets.html" class="side-menu__item">
+          <a [routerLink]="['/auth/detail']" class="side-menu__item">
             <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" enable-background="new 0 0 24 24"
               viewBox="0 0 24 24">
               <path fill="#b7bbc0"
@@ -282,29 +282,7 @@
         </li>
         <!-- End::slide -->
 
-        <!-- Start::slide__category -->
-        <li class="slide__category"><span class="category-name">Maps &amp; charts</span></li>
-        <!-- End::slide__category -->
 
-        <!-- Start::slide -->
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 24 24">
-              <path fill="#9399a1"
-                d="M12 22a.993.993 0 0 1-.65-.241C11.049 21.502 4 15.397 4 10a8 8 0 0 1 16 0c0 5.397-7.049 11.502-7.35 11.759A.993.993 0 0 1 12 22Z" />
-              <path fill="#4b5563" d="M12 14a4 4 0 1 1 4-4 4.004 4.004 0 0 1-4 4Z" />
-            </svg>
-            <span class="side-menu__label">Maps</span>
-            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide side-menu__label1"><a href="javascript:void(0)">Maps</a></li>
-            <li class="slide"><a href="google-maps.html" class="side-menu__item">Google Maps</a></li>
-            <li class="slide"><a href="leaflet-maps.html" class="side-menu__item">Leaflet Maps</a></li>
-            <li class="slide"><a href="vector-maps.html" class="side-menu__item">Vector Maps</a></li>
-          </ul>
-        </li>
-        <!-- End::slide -->
 
         <!-- Start::slide -->
         <li class="slide has-sub">
@@ -329,100 +307,7 @@
         <!-- End::slide -->
 
 
-        <!-- Start::slide__category -->
-        <li class="slide__category"><span class="category-name">Pages</span></li>
-        <!-- End::slide__category -->
 
-        <!-- Start::slide -->
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24">
-              <path fill="#9399a1"
-                d="M12.58447,17.94482c2.37423-1.73565,5.35432-2.42634,8.25-1.91211c0.54491,0.09121,1.06059-0.27659,1.1518-0.8215c0.00912-0.05447,0.01371-0.10959,0.01373-0.16482v-12c-0.00019-0.48836-0.35289-0.90525-0.83447-0.98633C20.45033,1.93541,19.72597,1.87073,19,1.8667c-2.48281-0.00313-4.91364,0.71123-7,2.05713V18.1333C12.20977,18.13337,12.41425,18.06743,12.58447,17.94482z" />
-              <path fill="#4b5563"
-                d="M5,1.8667C4.27403,1.87073,3.54967,1.93541,2.83447,2.06006C2.35289,2.14114,2.00019,2.55803,2,3.04639v12c0.00018,0.5525,0.44822,1.00023,1.00071,1.00005c0.05522-0.00002,0.11035-0.00461,0.16482-0.01373C3.77131,15.92622,4.38495,15.87069,5,15.8667c2.30424-0.00178,4.54995,0.72565,6.41553,2.07812C11.58575,18.06743,11.79023,18.13337,12,18.1333V3.92383C9.91364,2.57793,7.48281,1.86357,5,1.8667z" />
-              <path fill="#9399a1"
-                d="M21.16553,18.06006C20.45033,17.93541,19.72597,17.87073,19,17.8667c-2.48281-0.00313-4.91364,0.71124-7,2.05713v2.20947c0.20977,0.00007,0.41425-0.06587,0.58447-0.18848c2.37423-1.73565,5.35432-2.42634,8.25-1.91211c0.54459,0.09225,1.06086-0.27445,1.1531-0.81904c0.09225-0.54459-0.27445-1.06086-0.81904-1.1531C21.16753,18.06039,21.16653,18.06023,21.16553,18.06006z" />
-              <path fill="#4b5563"
-                d="M5,17.8667c-0.72595,0.00403-1.45032,0.06873-2.16553,0.19336c-0.00104,0.00018-0.00201,0.00031-0.00305,0.00049c-0.54462,0.09229-0.91125,0.60852-0.81903,1.15314c0.09229,0.54462,0.60852,0.91125,1.15314,0.81903C3.7713,19.92621,4.38495,19.87067,5,19.8667c2.30426-0.00177,4.54993,0.72565,6.41553,2.07812C11.58575,22.06744,11.79022,22.13336,12,22.1333v-2.20947C9.91364,18.57794,7.48279,17.86359,5,17.8667z" />
-            </svg>
-            <span class="side-menu__label">Pages</span>
-            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide side-menu__label1"><a href="javascript:void(0)">Pages</a></li>
-            <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Profile<i
-                  class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
-              <ul class="slide-menu child2">
-                <li class="slide"><a href="profile.html" class="side-menu__item">Home</a></li>
-                <li class="slide"><a href="profile-settings.html" class="side-menu__item">Profile
-                    Settings</a></li>
-              </ul>
-            </li>
-            <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Invoice<i
-                  class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
-              <ul class="slide-menu child2">
-                <li class="slide"><a href="invoice-list.html" class="side-menu__item">Invoice List</a>
-                </li>
-                <li class="slide"><a href="invoice.html" class="side-menu__item">Invoice Details</a>
-                </li>
-              </ul>
-            </li>
-            <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Blog<i
-                  class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
-              <ul class="slide-menu child2">
-                <li class="slide"><a href="blog.html" class="side-menu__item">Blog</a></li>
-                <li class="slide"><a href="blog-details.html" class="side-menu__item">Blog Details</a>
-                </li>
-                <li class="slide"><a href="blog-edit.html" class="side-menu__item">Edit Blog</a></li>
-              </ul>
-            </li>
-            <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Mail<i
-                  class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
-              <ul class="slide-menu child2">
-                <li class="slide"><a href="mail-inbox.html" class="side-menu__item">Mail</a></li>
-                <li class="slide"><a href="chat.html" class="side-menu__item">Chat</a></li>
-                <li class="slide"><a href="mail-settings.html" class="side-menu__item">Mail-settings</a>
-                </li>
-              </ul>
-            </li>
-            <li class="slide has-sub"><a href="javascript:void(0);" class="side-menu__item">Ecommerce<i
-                  class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
-              <ul class="slide-menu child2">
-                <li class="slide"><a href="products.html" class="side-menu__item">Products</a></li>
-                <li class="slide"><a href="product-list.html" class="side-menu__item">Product list</a>
-                </li>
-                <li class="slide"><a href="add-product.html" class="side-menu__item">Add Product</a>
-                </li>
-                <li class="slide"><a href="edit-product.html" class="side-menu__item">Edit Product</a>
-                </li>
-                <li class="slide"><a href="products-details.html" class="side-menu__item">Products-Details</a>
-                </li>
-                <li class="slide"><a href="cart.html" class="side-menu__item">Cart</a></li>
-                <li class="slide"><a href="checkout.html" class="side-menu__item">Checkout</a></li>
-                <li class="slide"><a href="orders.html" class="side-menu__item">Orders</a></li>
-                <li class="slide"><a href="order-details.html" class="side-menu__item">Order Details</a>
-                </li>
-                <li class="slide"><a href="wishlist.html" class="side-menu__item">Whislist</a></li>
-              </ul>
-            </li>
-            <li class="slide"><a href="about.html" class="side-menu__item">About Us</a></li>
-            <li class="slide"><a href="contacts.html" class="side-menu__item">Contacts</a></li>
-            <li class="slide"><a href="pricing.html" class="side-menu__item">Pricing tables</a></li>
-            <li class="slide"><a href="timeline.html" class="side-menu__item">Timeline</a></li>
-            <li class="slide"><a href="team.html" class="side-menu__item">Team</a></li>
-            <li class="slide"><a href="landing.html" class="side-menu__item">Landing</a></li>
-            <li class="slide"><a href="todo.html" class="side-menu__item">Todo list</a></li>
-            <li class="slide"><a href="tasks.html" class="side-menu__item">Tasks</a></li>
-            <li class="slide"><a href="reviews.html" class="side-menu__item">Reviews</a></li>
-            <li class="slide"><a href="faqs.html" class="side-menu__item">Faq's</a></li>
-            <li class="slide"><a href="contactus.html" class="side-menu__item">Contact Us</a></li>
-            <li class="slide"><a href="terms.html" class="side-menu__item">Terms&amp;conditions</a></li>
-            <li class="slide"><a href="empty.html" class="side-menu__item">Empty</a></li>
-          </ul>
-        </li>
-        <!-- End::slide -->
 
         <!-- Start::slide -->
         <li class="slide has-sub">

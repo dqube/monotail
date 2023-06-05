@@ -125,33 +125,33 @@ module.exports = {
       },
     },
   },
-  rippleui: {
-    themes: [
-      {
-        themeName: 'light',
-        colorScheme: 'light',
-        colors: {
-          primary: '#5DA585',
-          backgroundPrimary: '#964643',
-          accent: '#583533',
-        },
-      },
-      {
-        themeName: 'dark',
-        colorScheme: 'dark',
-        colors: {
-          primary: '#573242',
-          backgroundPrimary: '#1a1a1a',
-        },
-      },
-    ],
-  },
+  // rippleui: {
+  //   themes: [
+  //     {
+  //       themeName: 'light',
+  //       colorScheme: 'light',
+  //       colors: {
+  //         primary: '#5DA585',
+  //         backgroundPrimary: '#964643',
+  //         accent: '#583533',
+  //       },
+  //     },
+  //     {
+  //       themeName: 'dark',
+  //       colorScheme: 'dark',
+  //       colors: {
+  //         primary: '#573242',
+  //         backgroundPrimary: '#1a1a1a',
+  //       },
+  //     },
+  //   ],
+  // },
   plugins: [
     require('tailwindcss'),
     require('@tailwindcss/forms'),
     require('tailwind-clip-path'),
     // require('preline/plugin'),
-    require('rippleui'),
+    // require('rippleui'),
     require('tailwind-scrollbar'),
     plugin(function ({ addComponents }) {
       addComponents({
