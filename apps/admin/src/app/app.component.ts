@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormlyFieldConfig } from '@app/form/core';
+import { MenuService } from '@app/ui/sidebar';
+import { Menu } from './menu';
 interface auth {
   email: string;
   firstName?: string;
@@ -11,6 +13,9 @@ interface auth {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  constructor(private menuService: MenuService) {
+    this.menuService.loadMenus(Menu.pages);
+  }
   title = 'admin';
   form = new FormGroup({});
   model: auth = { email: 'email@gmail.com' };
