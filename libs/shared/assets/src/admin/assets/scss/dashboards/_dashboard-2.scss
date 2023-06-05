@@ -1,0 +1,17 @@
+/* Start::Dashboard-2 Styles */
+
+.ecommerce-icon svg {
+  @apply w-7 h-7 p-1.5 bg-primary rounded-md;
+}
+
+.selling-table {
+  .ti-custom-table th {
+    @apply text-xs text-[#495057] dark:text-white;
+  }
+
+  .ti-custom-table td {
+    @apply text-xs font-medium py-3 px-4;
+  }
+}
+
+/* End::Dashboard-2 Styles */

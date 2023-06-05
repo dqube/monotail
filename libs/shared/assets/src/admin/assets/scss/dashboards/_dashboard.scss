@@ -1,0 +1,45 @@
+/* Start Dashboard-1 Styles */
+
+#sales-chart,
+#sales-chart2,
+#sales-chart3,
+#sales-chart4 {
+  @apply min-h-0 #{!important};
+  .apexcharts-tooltip,
+  .apexcharts-xaxistooltip,
+  .apexcharts-xaxis,
+  .apexcharts-grid {
+    @apply hidden;
+  }
+  .apexcharts-inner {
+    @apply translate-x-0 -translate-y-1 rtl:translate-x-20;
+  }
+  .apexcharts-canvas {
+    @apply h-[70px] #{!important};
+    svg {
+      @apply h-[100px] #{!important};
+    }
+  }
+  .apexcharts-area-series.apexcharts-plot-series {
+    @apply w-[500px]  block #{!important};
+  }
+}
+#visitors {
+  .apexcharts-tooltip,
+  .apexcharts-xaxistooltip,
+  .apexcharts-grid {
+    @apply hidden;
+  }
+
+  .apexcharts-xaxis,
+  .apexcharts-yaxis {
+    line {
+      @apply stroke-gray-200 dark:stroke-white/10;
+    }
+  }
+  .apexcharts-text.apexcharts-yaxis-label.apexcharts-yaxis-label {
+    @apply rtl:-translate-x-12;
+  }
+}
+
+/* End Dashboard-1 Styles */

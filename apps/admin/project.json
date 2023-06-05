@@ -23,11 +23,11 @@
           },
           {
             "glob": "**/*",
-            "input": "libs/shared/assets/src/assets",
+            "input": "libs/shared/assets/src/admin/assets/",
             "output": "assets"
           }
         ],
-        "styles": ["apps/admin/src/styles.scss"],
+        "styles": ["libs/shared/assets/src/admin/assets/scss/style.scss"],
         "scripts": []
       },
       "configurations": {

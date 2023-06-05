@@ -1,0 +1,39 @@
+/* Start:: Dashboard-6 Styles */
+#active-chart {
+  @apply min-h-0 #{!important};
+  .apexcharts-tooltip,
+  .apexcharts-xaxistooltip,
+  .apexcharts-xaxis,
+  .apexcharts-grid {
+    @apply hidden;
+  }
+  .apexcharts-inner {
+    @apply translate-x-0 -translate-y-1 rtl:translate-x-20;
+  }
+  .apexcharts-canvas {
+    @apply h-[70px] #{!important};
+    svg {
+      @apply h-[100px] #{!important};
+    }
+  }
+  .apexcharts-area-series.apexcharts-plot-series {
+    @apply w-[500px]  block #{!important};
+  }
+}
+#audience{
+  .apexcharts-text.apexcharts-yaxis-label.apexcharts-yaxis-label {
+    @apply rtl:-translate-x-3;
+  }
+}
+#audienceReport{
+  .apexcharts-text.apexcharts-yaxis-label.apexcharts-yaxis-label {
+    @apply rtl:-translate-x-11;
+  }
+}
+#session2 {
+  .apexcharts-text  {
+    @apply hidden;
+  }
+}
+
+/* End:: Dashboard-6 Styles */
