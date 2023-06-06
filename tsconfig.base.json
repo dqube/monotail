@@ -28,6 +28,7 @@
         "libs/shared/form/tail/form-field/src/index.ts"
       ],
       "@app/form/tail/input": ["libs/shared/form/tail/input/src/index.ts"],
+      "@app/form/tail/panel": ["libs/shared/form/tail/panel/src/index.ts"],
       "@app/form/tail/radio": ["libs/shared/form/tail/radio/src/index.ts"],
       "@app/form/tail/select": ["libs/shared/form/tail/select/src/index.ts"],
       "@app/form/tail/textarea": [

@@ -57,7 +57,9 @@
           "libs/shared/form/tail/toggle/**/*.ts",
           "libs/shared/form/tail/toggle/**/*.html",
           "libs/shared/form/tail/textarea/**/*.ts",
-          "libs/shared/form/tail/textarea/**/*.html"
+          "libs/shared/form/tail/textarea/**/*.html",
+          "libs/shared/form/tail/panel/**/*.ts",
+          "libs/shared/form/tail/panel/**/*.html"
         ]
       }
     }
