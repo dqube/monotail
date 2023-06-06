@@ -59,7 +59,17 @@
           "libs/shared/form/tail/textarea/**/*.ts",
           "libs/shared/form/tail/textarea/**/*.html",
           "libs/shared/form/tail/panel/**/*.ts",
-          "libs/shared/form/tail/panel/**/*.html"
+          "libs/shared/form/tail/panel/**/*.html",
+          "libs/shared/form/tail/repeat/**/*.ts",
+          "libs/shared/form/tail/repeat/**/*.html",
+          "libs/shared/form/tail/multi-step/**/*.ts",
+          "libs/shared/form/tail/multi-step/**/*.html",
+          "libs/shared/form/tail/tab/**/*.ts",
+          "libs/shared/form/tail/tab/**/*.html",
+          "libs/shared/form/tail/table/**/*.ts",
+          "libs/shared/form/tail/table/**/*.html",
+          "libs/shared/form/tail/stepper/**/*.ts",
+          "libs/shared/form/tail/stepper/**/*.html"
         ]
       }
     }

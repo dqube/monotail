@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormlyFieldConfig, FormlyFormOptions } from '@app/form/core';
-import { PanelFieldWrapper } from '@app/form/tail/panel';
 interface auth {
   email: string;
   firstName?: string;
@@ -13,7 +12,7 @@ interface auth {
 })
 export class DetailComponent {
   form = new FormGroup({});
-  model: auth = { email: 'email@gmail.com' };
+  model: { email: 'email@gmail.com'; tasks: [null] } | undefined;
   options: FormlyFormOptions = {
     formState: {
       awesomeIsForced: false,
@@ -22,9 +21,55 @@ export class DetailComponent {
   fields: FormlyFieldConfig[] = [
     {
       key: 'address',
-      wrappers: [PanelFieldWrapper],
+      wrappers: ['panel'],
       props: { label: 'Address' },
       fieldGroup: [
+        {
+          key: 'tasks',
+          type: 'repeat',
+          props: {
+            addText: 'Add Task',
+            label: 'TODO LIST',
+          },
+          fieldArray: {
+            fieldGroupClassName: 'row',
+            templateOptions: {
+              btnText: 'Add another investment',
+            },
+            fieldGroup: [
+              {
+                fieldGroup: [
+                  {
+                    key: 'candy',
+                    type: 'select',
+                    defaultValue: 'milky_way',
+                    props: {
+                      label: 'Favorite Candy (initialized via default value)',
+                      options: [
+                        { label: 'Snickers', value: 'snickers' },
+                        { label: 'Baby Ruth', value: 'baby_ruth' },
+                        { label: 'Milky Way', value: 'milky_way' },
+                      ],
+                      multiple: true,
+                    },
+                  },
+                ],
+              }, //Row 1 settings
+              {
+                fieldGroup: [
+                  {
+                    className: 'col-6',
+                    type: 'input',
+                    key: 'firstName',
+                    props: {
+                      label: 'First Name',
+                    },
+                  },
+                ],
+              }, //Row 2 settings
+            ],
+          },
+        },
         {
           key: 'email',
           type: 'input',
