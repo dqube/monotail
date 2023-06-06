@@ -20,10 +20,11 @@ export interface FormlyTextAreaFieldConfig
     <ng-template #fieldTypeTemplate>
       <textarea
         [formControl]="formControl"
+        [placeholder]="props.placeholder"
         [cols]="props.cols"
         [rows]="props.rows"
-        [class.border-error]="showError"
-        class="textarea max-w-full focus-within:border-primary"
+        class="form-input max-w-full focus-within:border-primary"
+        [class.border-danger]="showError"
         [formlyAttributes]="field"
         [placeholder]="props.placeholder"
       >

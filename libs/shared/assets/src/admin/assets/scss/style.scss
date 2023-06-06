@@ -86,8 +86,13 @@ Background Image
 -------------------*/
 
 /* Start FontFamily Styles */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback');
-
+//@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback');
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/inter/Inter-Regular.woff') format('woff');
+}
 /* End Tailwind Styles Styles */
 
 @import './tailwind/tailwind';

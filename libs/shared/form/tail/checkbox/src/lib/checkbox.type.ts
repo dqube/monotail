@@ -6,6 +6,7 @@ import { FieldType, FormlyFieldProps } from '@app/form/tail/form-field';
 
 interface CheckboxProps extends FormlyFieldProps {
   formCheck?: 'default' | 'inline' | 'switch' | 'inline-switch' | 'nolabel';
+  multiple?: boolean;
   indeterminate?: boolean;
 }
 
@@ -18,39 +19,57 @@ export interface FormlyCheckboxFieldConfig
   selector: 'formly-field-checkbox',
   template: `
     <ng-template #fieldTypeTemplate>
-      <!-- <div
-        class="checkbox"
-        [ngClass]="{
-          'form-check-inline':
-            props.formCheck === 'inline' || props.formCheck === 'inline-switch',
-          'form-switch':
-            props.formCheck === 'switch' || props.formCheck === 'inline-switch'
-        }"
-      >
+      <ng-template [ngIf]="!props.multiple" [ngIfElse]="multipleCheckbox">
         <input
           type="checkbox"
-          [class.is-invalid]="showError"
-          class="form-check-input"
-          [class.position-static]="props.formCheck === 'nolabel'"
-          [indeterminate]="props.indeterminate && formControl.value == null"
+          class="form-checkbox mt-0.5"
           [formControl]="formControl"
           [formlyAttributes]="field"
         />
         <label
-          *ngIf="props.formCheck !== 'nolabel'"
           [for]="id"
-          class="form-check-label"
+          class="text-sm text-gray-500 ltr:ml-3 rtl:mr-3 dark:text-white/70"
+          >{{ props.label }}</label
         >
-          {{ props.label }}
-          <span
-            *ngIf="props.required && props.hideRequiredMarker !== true"
-            aria-hidden="true"
-            >*</span
+      </ng-template>
+
+      <ng-template #multipleCheckbox>
+        <ul
+          [id]="field.name"
+          name="field.name || id"
+          class="max-w-sm flex flex-col"
+        >
+          <li
+            class="ti-list-group bg-white text-gray-800 dark:bg-bgdark dark:border-white/10 dark:text-white"
+            *ngFor="
+              let option of props.options | formlySelectOptions : field | async;
+              let i = index
+            "
           >
-        </label>
-        
-      </div> -->
-      <div>
+            <div class="relative flex items-start w-full">
+              <div class="flex items-center h-5">
+                <input
+                  type="checkbox"
+                  class="form-checkbox"
+                  for="id + '_' + i"
+                  [id]="id + '_' + i"
+                  [name]="field.name || id"
+                  multiple
+                  [formControl]="formControl"
+                  [formlyAttributes]="field"
+                />
+              </div>
+              <label
+                for="id + '_' + i"
+                class="ltr:ml-2.5 rtl:mr-2.5 block w-full text-sm text-gray-600 dark:text-white/70"
+              >
+                {{ option.label }}
+              </label>
+            </div>
+          </li>
+        </ul>
+      </ng-template>
+      <!-- <div>
         <label
           *ngIf="props.formCheck !== 'nolabel'"
           [for]="id"
@@ -64,12 +83,12 @@ export interface FormlyCheckboxFieldConfig
           />
           <span>{{ props.label }}</span>
         </label>
-        <!-- <span
+        < <span
           *ngIf="props.required && props.hideRequiredMarker !== true"
           aria-hidden="true"
           >*</span
-        > -->
-      </div>
+        > 
+      </div> -->
     </ng-template>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,

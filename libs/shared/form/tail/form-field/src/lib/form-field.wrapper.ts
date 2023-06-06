@@ -15,25 +15,21 @@ export interface FormlyFieldProps extends CoreFormlyFieldProps {
 @Component({
   selector: 'formly-wrapper-tail-form-field',
   template: `
-    <div class="form-field group mb-2">
+    <div class="space-y-2">
       <label
         *ngIf="props.label && props.hideLabel !== true"
         [for]="id"
-        class="form-label group-focus-within:text-primary"
-        [class.text-error]="showError"
+        class="form-label mb-0"
+        [class.text-danger]="showError"
+        >{{ props.label
+        }}<span *ngIf="props.required" class="text-danger">*</span></label
       >
-        {{ props.label }}
-        <span class="form-label-alt text-error">*</span>
-      </label>
       <ng-container #fieldComponent></ng-container>
-      <div *ngIf="showError" class="text-error text-xs italic">
+      <div *ngIf="showError" class="text-danger text-xs italic">
         <formly-validation-message [field]="field"></formly-validation-message>
       </div>
       <label class="form-label" *ngIf="props.description && !showError">
-        <span
-          class="form-label-alt text-xs italic group-focus-within:text-primary"
-          >{{ props.description }}</span
-        >
+        <span class="text-xs italic">{{ props.description }}</span>
       </label>
     </div>
   `,

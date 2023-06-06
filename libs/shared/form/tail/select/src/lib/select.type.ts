@@ -30,11 +30,11 @@ export interface FormlySelectFieldConfig
     <ng-template #fieldTypeTemplate>
       <select
         *ngIf="props.multiple; else singleSelect"
-        class="select"
+        class="form-select"
         multiple
         [formControl]="formControl"
         [compareWith]="props.compareWith"
-        [class.is-invalid]="showError"
+        [class.border-danger]="showError"
         [formlyAttributes]="field"
       >
         <ng-container
@@ -65,10 +65,10 @@ export interface FormlySelectFieldConfig
 
       <ng-template #singleSelect>
         <select
-          class="select"
+          class="form-select"
           [formControl]="formControl"
           [compareWith]="props.compareWith"
-          [class.is-invalid]="showError"
+          [class.border-danger]="showError"
           [formlyAttributes]="field"
         >
           <option *ngIf="props.placeholder" [ngValue]="undefined">

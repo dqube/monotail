@@ -9,8 +9,17 @@ export class Menu {
         {
           icon: 'dashboard',
           label: 'Dashboard',
-          route: '/booking',
-          children: [{ label: 'booking', route: '/booking/list' }],
+          route: '/auth/list',
+          active: true,
+          expanded: true,
+          children: [
+            {
+              label: 'booking',
+              route: '/booking/list',
+              expanded: true,
+              active: true,
+            },
+          ],
         },
         {
           icon: 'general',
@@ -40,7 +49,7 @@ export class Menu {
         {
           icon: 'elements',
           label: 'Auth',
-          route: '/auth',
+          route: '/pages',
           children: [
             { label: 'Sign up', route: '/auth/sign-up' },
             { label: 'Sign in', route: '/auth/sign-in' },
