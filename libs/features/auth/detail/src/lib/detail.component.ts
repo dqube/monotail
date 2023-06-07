@@ -4,6 +4,8 @@ import { FormlyFieldConfig, FormlyFormOptions } from '@app/form/core';
 interface auth {
   email: string;
   firstName?: string;
+  tasks?: [];
+  multicheckbox?: [];
 }
 @Component({
   selector: 'app-auth-detail',
@@ -12,7 +14,7 @@ interface auth {
 })
 export class DetailComponent {
   form = new FormGroup({});
-  model: { email: 'email@gmail.com'; tasks: [null] } | undefined;
+  model: auth = { email: 'email@gmail.com', tasks: [], multicheckbox: [] };
   options: FormlyFormOptions = {
     formState: {
       awesomeIsForced: false,
@@ -147,23 +149,34 @@ export class DetailComponent {
               props: {
                 label: 'Last Name',
               },
-              expressions: {
-                'props.disabled': '!model.firstName',
-              },
             },
             {
               key: 'Checkbox',
               type: 'checkbox',
               props: {
                 label: 'Accept terms',
+                description: 'In order to proceed, please accept terms',
                 pattern: 'true',
                 required: true,
+              },
+              validation: {
+                messages: {
+                  pattern: 'Please accept the terms',
+                },
+              },
+            },
+            {
+              key: 'multicheckbox',
+              type: 'multicheckbox',
+              props: {
+                label: 'Accept terms',
+                required: true,
+
                 options: [
                   { value: 1, label: 'Male' },
                   { value: 2, label: 'Female' },
                   { value: 4, label: 'Others', disabled: true },
                 ],
-                multiple: true,
               },
               validation: {
                 messages: {
@@ -207,6 +220,7 @@ export class DetailComponent {
   ];
 
   submit() {
+    alert(JSON.stringify(this.model));
     if (this.form.valid) {
       alert(JSON.stringify(this.model));
     }

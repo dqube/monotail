@@ -31,6 +31,9 @@
       "@app/form/tail/multi-step": [
         "libs/shared/form/tail/multi-step/src/index.ts"
       ],
+      "@app/form/tail/multicheckbox": [
+        "libs/shared/form/tail/multicheckbox/src/index.ts"
+      ],
       "@app/form/tail/panel": ["libs/shared/form/tail/panel/src/index.ts"],
       "@app/form/tail/radio": ["libs/shared/form/tail/radio/src/index.ts"],
       "@app/form/tail/repeat": ["libs/shared/form/tail/repeat/src/index.ts"],
