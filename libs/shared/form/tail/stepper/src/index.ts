@@ -1,1 +1,1 @@
-export * from './lib/stepper.module';
+export * from './lib/public_api';

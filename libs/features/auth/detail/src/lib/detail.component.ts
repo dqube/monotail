@@ -30,16 +30,15 @@ export class DetailComponent {
           props: {
             addText: 'Add Task',
             label: 'TODO LIST',
+            removeText: '-',
           },
           fieldArray: {
-            fieldGroupClassName: 'row',
-            templateOptions: {
-              btnText: 'Add another investment',
-            },
+            fieldGroupClassName: 'grid grid-cols-3 gap-4',
             fieldGroup: [
               {
                 fieldGroup: [
                   {
+                    className: 'col-6',
                     key: 'candy',
                     type: 'select',
                     defaultValue: 'milky_way',

@@ -5,27 +5,29 @@ import { FieldArrayType } from '@app/form/core';
 @Component({
   selector: 'formly-repeat-section',
   template: `
-    <div class="mb-3">
-      <legend *ngIf="props.label">{{ props.label }}</legend>
-      <p *ngIf="props.description">{{ props.description }}</p>
+    <legend *ngIf="props.label">{{ props.label }}</legend>
+    <p *ngIf="props.description">{{ props.description }}</p>
 
-      <div
-        *ngFor="let field of field.fieldGroup; let i = index"
-        class="row align-items-baseline"
+    <div
+      *ngFor="let field of field.fieldGroup; let i = index"
+      class="row align-items-baseline"
+    >
+      <formly-field class="col" [field]="field"></formly-field>
+      <button
+        type="button"
+        class="ti-btn bg-danger text-white hover:bg-primary  focus:ring-primary  dark:focus:ring-offset-white/10"
+        (click)="remove(i)"
       >
-        <formly-field class="col" [field]="field"></formly-field>
-        <div class="col-1 d-flex align-items-center">
-          <button class="btn btn-danger" type="button" (click)="remove(i)">
-            -
-          </button>
-        </div>
-      </div>
-      <div style="margin:30px 0;">
-        <button class="btn btn-primary" type="button" (click)="add()">
-          {{ props.addText }}
-        </button>
-      </div>
+        {{ props.removeText }}
+      </button>
     </div>
+    <button
+      type="button"
+      class="ti-btn bg-primary text-white hover:bg-primary  focus:ring-primary  dark:focus:ring-offset-white/10"
+      (click)="add()"
+    >
+      {{ props.addText }}
+    </button>
   `,
 })
 export class RepeatTypeComponent extends FieldArrayType {}

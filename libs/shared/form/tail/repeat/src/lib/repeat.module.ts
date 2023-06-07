@@ -6,7 +6,7 @@ import { RepeatTypeComponent } from './repeat-section.type';
 @NgModule({
   imports: [
     CommonModule,
-    FormlyModule.forRoot({
+    FormlyModule.forChild({
       types: [{ name: 'repeat', component: RepeatTypeComponent }],
     }),
   ],
