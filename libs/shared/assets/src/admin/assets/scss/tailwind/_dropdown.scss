@@ -4,28 +4,28 @@
     @apply relative inline-flex;
   }
   .ti-dropdown-toggle {
-    @apply py-3 px-4 inline-flex justify-center items-center gap-2 rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10;
+    @apply focus:ring-primary dark:bg-bgdark inline-flex items-center justify-center gap-2 rounded-sm border bg-white px-4 py-3 align-middle text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white dark:border-white/10 dark:text-white/70 dark:hover:bg-black/20 dark:hover:text-white dark:focus:ring-offset-white/10;
   }
   .ti-dropdown-caret {
-    @apply w-2.5 h-2.5 text-gray-600 dark:text-white/70;
+    @apply h-2.5 w-2.5 text-gray-600 dark:text-white/70;
   }
   .ti-dropdown-menu {
-    @apply transition-[opacity,margin] opacity-0 hidden z-10 mt-2 min-w-[15rem] bg-white shadow-md border border-gray-200 rounded-sm p-2 dark:bg-bgdark dark:border-white/10 dark:divide-white/10;
+    @apply dark:bg-bgdark z-10 mt-2 hidden min-w-[15rem] rounded-sm border border-gray-200 bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] dark:divide-white/10 dark:border-white/10;
   }
   .ti-dropdown-item {
-    @apply flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-50 focus:ring-0 focus:ring-primary dark:text-white/70 dark:hover:bg-black/20 dark:hover:text-gray-300;
+    @apply focus:ring-primary flex items-center gap-x-3.5 rounded-sm px-3 py-2 text-sm text-gray-800 hover:bg-gray-50 focus:ring-0 dark:text-white/70 dark:hover:bg-black/20 dark:hover:text-gray-300;
   }
   .ti-dropdown-menu-hover {
-    @apply after:h-4 after:absolute after:-bottom-4 after:ltr:left-0 after:rtl:right-0 after:w-full before:h-4 before:absolute before:-top-4 before:ltr:left-0 before:rtl:right-0 before:w-full;
+    @apply before:absolute before:-top-4 before:h-4 before:w-full after:absolute after:-bottom-4 after:h-4 after:w-full before:ltr:left-0 after:ltr:left-0 before:rtl:right-0 after:rtl:right-0;
   }
   .ti-dropdown-divider {
     @apply py-2 first:pt-0 last:pb-0;
   }
   .ti-dropdown-title {
-    @apply block py-2 px-3 text-xs font-medium uppercase text-gray-400 dark:text-white/70;
+    @apply block px-3 py-2 text-xs font-medium uppercase text-gray-400 dark:text-white/70;
   }
   .ti-dropdown-header {
-    @apply py-3 px-5 -m-2 bg-gray-100 rounded-t-sm dark:bg-black/20;
+    @apply -m-2 rounded-t-sm bg-gray-100 px-5 py-3 dark:bg-black/20;
     .ti-dropdown-header-title {
       @apply text-sm text-gray-500 dark:text-white;
     }
@@ -34,13 +34,13 @@
     }
   }
   .ti-dropdowm-profileimg {
-    @apply w-8 h-auto rounded-full;
+    @apply h-auto w-8 rounded-full;
   }
   .ti-dropdowm-profileimg-content {
-    @apply text-gray-600 font-medium truncate max-w-[7.5rem] dark:text-white/70;
+    @apply max-w-[7.5rem] truncate font-medium text-gray-600 dark:text-white/70;
   }
   .ti-dropdown-icon {
-    @apply w-4 h-4 text-gray-600 dark:text-white/70;
+    @apply h-4 w-4 text-gray-600 dark:text-white/70;
   }
 
   /* End Dropdown Styles */
@@ -73,7 +73,7 @@
   }
 
   .dropdown-divider::before {
-    @apply absolute top-0 right-0  -left-2 h-px   bg-gray-600 content-[""];
+    @apply absolute -left-2 right-0  top-0 h-px   bg-gray-600 content-[""];
   }
 
   .dropdown-active {
@@ -89,7 +89,7 @@
   }
 
   .dropdown-menu-top-center {
-    @apply invisible left-1/2 right-[100%] bottom-full    origin-bottom -translate-x-1/2;
+    @apply invisible bottom-full left-1/2 right-[100%]    origin-bottom -translate-x-1/2;
   }
 
   .dropdown-menu-bottom-right {
@@ -101,19 +101,19 @@
   }
 
   .dropdown-menu-top-right {
-    @apply invisible left-1/2 bottom-full ml-[-50%]    origin-bottom-left -translate-y-2;
+    @apply invisible bottom-full left-1/2 ml-[-50%]    origin-bottom-left -translate-y-2;
   }
 
   .dropdown-menu-top-left {
-    @apply invisible left-1/2 bottom-full right-0 ml-auto    origin-bottom-right -translate-y-2;
+    @apply invisible bottom-full left-1/2 right-0 ml-auto    origin-bottom-right -translate-y-2;
   }
 
   .dropdown-menu-left {
-    @apply invisible bottom-auto top-1/2 right-[100%]     origin-right -translate-y-1/2;
+    @apply invisible bottom-auto right-[100%] top-1/2     origin-right -translate-y-1/2;
   }
 
   .dropdown-menu-right {
-    @apply invisible bottom-auto top-1/2 left-[100%]    origin-left -translate-y-1/2;
+    @apply invisible bottom-auto left-[100%] top-1/2    origin-left -translate-y-1/2;
   }
 
   .dropdown-menu-left-bottom {
@@ -125,14 +125,14 @@
   }
 
   .dropdown-menu-left-top {
-    @apply invisible right-[100%] bottom-0    origin-bottom-right;
+    @apply invisible bottom-0 right-[100%]    origin-bottom-right;
   }
 
   .dropdown-menu-right-top {
-    @apply invisible left-[100%] bottom-0    origin-bottom-left -translate-y-2;
+    @apply invisible bottom-0 left-[100%]    origin-bottom-left -translate-y-2;
   }
   .dropdown-icon {
-    @apply w-4 h-4 text-gray-600 dark:text-white/70;
+    @apply h-4 w-4 text-gray-600 dark:text-white/70;
   }
   /* Only Bottom Side  */
   .dropdown-hover:hover .dropdown-menu,
@@ -158,7 +158,7 @@
     .dropdown-menu-top-right,
   .dropdown:not(.dropdown-hover):where(:focus, :focus-within)
     .dropdown-menu-top-left {
-    @apply visible translate-x-0 -translate-y-0 scale-100 opacity-100;
+    @apply visible -translate-y-0 translate-x-0 scale-100 opacity-100;
   }
 
   /* Only Right   */
@@ -167,7 +167,7 @@
   .dropdown.dropdown-open .dropdown-menu.dropdown-menu-right,
   .dropdown:not(.dropdown-hover):where(:focus, :focus-within)
     .dropdown-menu-right {
-    @apply visible right-auto bottom-auto top-1/2 translate-x-0 -translate-y-1/2  scale-100 opacity-100;
+    @apply visible bottom-auto right-auto top-1/2 -translate-y-1/2 translate-x-0  scale-100 opacity-100;
   }
 
   /* Only Left   */
@@ -176,7 +176,7 @@
   .dropdown.dropdown-open .dropdown-menu.dropdown-menu-left,
   .dropdown:not(.dropdown-hover):where(:focus, :focus-within)
     .dropdown-menu-left {
-    @apply visible left-auto bottom-auto top-1/2 translate-x-0 -translate-y-1/2  scale-100 opacity-100;
+    @apply visible bottom-auto left-auto top-1/2 -translate-y-1/2 translate-x-0  scale-100 opacity-100;
   }
 
   /* Only Left and right Bottom Side   */
@@ -188,7 +188,7 @@
     .dropdown-menu-right-bottom,
   .dropdown:not(.dropdown-hover):where(:focus, :focus-within)
     .dropdown-menu-left-bottom {
-    @apply visible translate-x-0 -translate-y-10 scale-100 opacity-100;
+    @apply visible -translate-y-10 translate-x-0 scale-100 opacity-100;
   }
 
   /* Only Left and right Top Side  */
@@ -217,5 +217,64 @@
   .dropdown:not(.dropdown-hover):where(:focus, :focus-within)
     .dropdown-menu-top-center {
     @apply visible    -translate-x-1/2  scale-100 opacity-100;
+  }
+
+  .menu {
+    @apply flex w-full flex-col gap-2;
+  }
+
+  .menu-section {
+    @apply flex flex-col gap-2;
+  }
+
+  .menu-title {
+    @apply text-xs font-normal;
+  }
+
+  .menu-items {
+    @apply flex flex-col gap-1.5;
+  }
+
+  .menu-item {
+    transition-property: transform, opacity, visibility;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @apply flex cursor-pointer select-none flex-row items-center gap-2 rounded-lg px-4 py-2 text-sm duration-150 will-change-transform hover:bg-gray-400 active:scale-[0.97] active:bg-gray-500;
+  }
+
+  .menu-item-disabled {
+    @apply text-content3 pointer-events-none cursor-not-allowed active:scale-[1];
+  }
+
+  .menu-item-no-animation {
+    @apply transition-none active:scale-[1];
+  }
+
+  .menu-item.menu-active {
+    @apply bg-gray-500  transition-none active:scale-[1];
+  }
+
+  .menu-toggle {
+    @apply hidden;
+  }
+
+  .menu-item-collapse {
+    transition: padding 0.15s, grid-template-rows 0.15s;
+    @apply grid grid-rows-[0fr] overflow-hidden;
+  }
+
+  .menu-toggle:checked ~ .menu-item-collapse {
+    @apply grid-rows-[1fr] border-none;
+  }
+
+  .menu-item:focus-within ~ .menu-item-collapse {
+    @apply grid-rows-[1fr] border-none;
+  }
+
+  .menu-icon {
+    @apply transition-transform duration-300;
+  }
+
+  .menu-toggle:checked ~ .menu-item .menu-icon {
+    @apply rotate-90;
   }
 }

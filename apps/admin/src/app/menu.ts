@@ -15,7 +15,7 @@ export class Menu {
           children: [
             {
               label: 'booking',
-              route: '/booking/list',
+              route: '/auth/list',
               expanded: true,
               active: true,
             },
