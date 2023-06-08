@@ -6,6 +6,12 @@ interface auth {
   firstName?: string;
   tasks?: [];
   multicheckbox?: [];
+  members?: member[];
+}
+interface member {
+  name: string;
+  age: number;
+  description: string;
 }
 @Component({
   selector: 'app-auth-detail',
@@ -14,13 +20,61 @@ interface auth {
 })
 export class DetailComponent {
   form = new FormGroup({});
-  model: auth = { email: 'email@gmail.com', tasks: [], multicheckbox: [] };
+  model: auth = {
+    email: 'email@gmail.com',
+    tasks: [],
+    multicheckbox: [],
+    members: [
+      { name: 'dev', age: 23, description: 'test' },
+      { name: 'dev', age: 23, description: 'test' },
+    ],
+  };
   options: FormlyFormOptions = {
     formState: {
       awesomeIsForced: false,
     },
   };
   fields: FormlyFieldConfig[] = [
+    {
+      key: 'members',
+      type: 'table',
+      props: {
+        label: 'Member',
+        columns: [
+          { label: 'Name' },
+          { label: 'Age' },
+          { label: 'Description' },
+        ],
+      },
+      fieldArray: {
+        fieldGroup: [
+          {
+            type: 'input',
+            key: 'name',
+            props: {
+              label: 'First Name',
+              required: true,
+            },
+          },
+          {
+            type: 'input',
+            key: 'age',
+            props: {
+              label: 'age',
+              required: true,
+            },
+          },
+          {
+            type: 'input',
+            key: 'desc',
+            props: {
+              label: 'desc',
+              required: true,
+            },
+          },
+        ],
+      },
+    },
     {
       wrappers: ['panel'],
       props: { label: 'Address' },
@@ -63,6 +117,7 @@ export class DetailComponent {
                     key: 'taskname',
                     props: {
                       label: 'First Name',
+                      required: true,
                     },
                   },
                 ],
