@@ -4,6 +4,7 @@ import { FormlyModule } from '@app/form/core';
 import { FormlyFieldStepper } from './stepper.type';
 
 @NgModule({
+  declarations: [FormlyFieldStepper],
   imports: [
     CommonModule,
     FormlyModule.forChild({

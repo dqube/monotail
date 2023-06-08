@@ -22,7 +22,6 @@ export class DetailComponent {
   };
   fields: FormlyFieldConfig[] = [
     {
-      key: 'address',
       wrappers: ['panel'],
       props: { label: 'Address' },
       fieldGroup: [
@@ -35,13 +34,13 @@ export class DetailComponent {
             removeText: '-',
           },
           fieldArray: {
-            fieldGroupClassName: 'grid grid-cols-3 gap-4',
+            fieldGroupClassName: 'grid grid-cols-2 gap-4',
             fieldGroup: [
               {
                 fieldGroup: [
                   {
                     className: 'col-6',
-                    key: 'candy',
+                    key: 'multiselect',
                     type: 'select',
                     defaultValue: 'milky_way',
                     props: {
@@ -61,7 +60,7 @@ export class DetailComponent {
                   {
                     className: 'col-6',
                     type: 'input',
-                    key: 'firstName',
+                    key: 'taskname',
                     props: {
                       label: 'First Name',
                     },
@@ -213,6 +212,14 @@ export class DetailComponent {
             required: true,
             cols: 1,
             rows: 5,
+          },
+        },
+        {
+          type: 'button',
+          props: {
+            btnType: 'primary',
+            text: 'With Function',
+            click: () => alert('You clicked me!'),
           },
         },
       ],

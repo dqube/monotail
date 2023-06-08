@@ -21,6 +21,7 @@
       "@app/form/core": ["libs/shared/form/core/src/index.ts"],
       "@app/form/core/select": ["libs/shared/form/core/select/src/index.ts"],
       "@app/form/tail": ["libs/shared/form/tail/src/index.ts"],
+      "@app/form/tail/button": ["libs/shared/form/tail/button/src/index.ts"],
       "@app/form/tail/checkbox": [
         "libs/shared/form/tail/checkbox/src/index.ts"
       ],

@@ -1,5 +1,6 @@
 /* eslint-disable @nx/enforce-module-boundaries */
 import { NgModule } from '@angular/core';
+import { FormlyTailwindButtonModule } from '@app/form/tail/button';
 import { FormlyTailwindCheckboxModule } from '@app/form/tail/checkbox';
 import { FormlyTailwindFormFieldModule } from '@app/form/tail/form-field';
 import { FormlyTailwindInputModule } from '@app/form/tail/input';
@@ -26,6 +27,7 @@ import { FormlyTailwindTextAreaModule } from '@app/form/tail/textarea';
     FormlyTailwindTabModule,
     FormlyTailwindTableModule,
     FormlyTailwindMultiCheckboxModule,
+    FormlyTailwindButtonModule,
   ],
 })
 export class FormlyTailwindModule {}

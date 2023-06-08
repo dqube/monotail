@@ -71,7 +71,9 @@
           "libs/shared/form/tail/stepper/**/*.ts",
           "libs/shared/form/tail/stepper/**/*.html",
           "libs/shared/form/tail/multicheckbox/**/*.ts",
-          "libs/shared/form/tail/multicheckbox/**/*.html"
+          "libs/shared/form/tail/multicheckbox/**/*.html",
+          "libs/shared/form/tail/button/**/*.ts",
+          "libs/shared/form/tail/button/**/*.html"
         ]
       }
     }

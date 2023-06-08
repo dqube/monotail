@@ -4,6 +4,7 @@ import { FormlyModule } from '@app/form/core';
 import { PanelFieldWrapper } from './panel-wrapper';
 
 @NgModule({
+  declarations: [PanelFieldWrapper],
   imports: [
     CommonModule,
     FormlyModule.forChild({

@@ -4,6 +4,7 @@ import { FormlyModule } from '@app/form/core';
 import { FormlyFieldTable } from './table.type';
 
 @NgModule({
+  declarations: [FormlyFieldTable],
   imports: [
     CommonModule,
     FormlyModule.forChild({
