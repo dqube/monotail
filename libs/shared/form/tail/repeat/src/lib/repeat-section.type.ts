@@ -24,7 +24,9 @@ import { FieldArrayType } from '@app/form/core';
       <table class="ti-custom-table ti-custom-table-head">
         <tbody>
           <tr *ngFor="let field of field.fieldGroup; let i = index">
-            <td><formly-field [field]="field"></formly-field></td>
+            <td *ngFor="let child of field.fieldGroup; let j = index">
+              <formly-field [field]="child"></formly-field>
+            </td>
 
             <td>
               <button
