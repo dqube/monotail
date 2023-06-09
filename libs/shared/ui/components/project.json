@@ -47,7 +47,9 @@
           "libs/shared/ui/components/sidebar/**/*.ts",
           "libs/shared/ui/components/sidebar/**/*.html",
           "libs/shared/ui/components/navbar/**/*.ts",
-          "libs/shared/ui/components/navbar/**/*.html"
+          "libs/shared/ui/components/navbar/**/*.html",
+          "libs/shared/ui/components/select/**/*.ts",
+          "libs/shared/ui/components/select/**/*.html"
         ]
       }
     }

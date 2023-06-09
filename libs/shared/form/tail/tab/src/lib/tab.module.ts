@@ -8,7 +8,7 @@ import { FormlyFieldTab } from './tab.type';
   imports: [
     CommonModule,
     FormlyModule.forChild({
-      types: [{ name: 'stepper', component: FormlyFieldTab, wrappers: [] }],
+      types: [{ name: 'tabs', component: FormlyFieldTab, wrappers: [] }],
     }),
   ],
 })

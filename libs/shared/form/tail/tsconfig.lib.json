@@ -6,7 +6,8 @@
     "declarationMap": true,
     "inlineSources": true,
     "types": [],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
   },
   "exclude": [
     "src/**/*.spec.ts",

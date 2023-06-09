@@ -54,6 +54,7 @@
       "@app/shared/environments": ["libs/shared/environments/src/index.ts"],
       "@app/ui": ["libs/shared/ui/components/src/index.ts"],
       "@app/ui/navbar": ["libs/shared/ui/components/navbar/src/index.ts"],
+      "@app/ui/select": ["libs/shared/ui/components/select/src/index.ts"],
       "@app/ui/sidebar": ["libs/shared/ui/components/sidebar/src/index.ts"]
     }
   },
