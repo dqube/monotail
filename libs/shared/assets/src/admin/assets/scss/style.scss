@@ -84,7 +84,10 @@ Header Styles
 Background Image
 
 -------------------*/
-
+html,
+body {
+  font-size: 12px;
+}
 /* Start FontFamily Styles */
 //@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback');
 @font-face {
@@ -93,6 +96,47 @@ Background Image
   font-weight: 200;
   src: url('../fonts/inter/Inter-Regular.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''), url('../fonts/inter/Inter-Light.woff2') format('woff2'),
+    url('../fonts/inter/Inter-Light.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/inter/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/inter/Inter-Regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('../fonts/inter/Inter-Medium.woff2') format('woff2'),
+    url('../fonts/inter/Inter-Medium.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''), url('../fonts/inter/Inter-SemiBold.woff2') format('woff2'),
+    url('../fonts/inter/Inter-SemiBold.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/inter/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/inter/Inter-Bold.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* End Tailwind Styles Styles */
 
 @import './tailwind/tailwind';
@@ -100,16 +144,16 @@ Background Image
 @import './variables';
 @import './icons';
 
-@import './dashboards/dashboard';
-@import './dashboards/dashboard-2';
-@import './dashboards/dashboard-3';
-@import './dashboards/dashboard-4';
-@import './dashboards/dashboard-5';
-@import './dashboards/dashboard-6';
-@import './dashboards/dashboard-7';
-@import './dashboards/dashboard-8';
-@import './dashboards/dashboard-9';
-@import './dashboards/dashboard-11';
+// @import './dashboards/dashboard';
+// @import './dashboards/dashboard-2';
+// @import './dashboards/dashboard-3';
+// @import './dashboards/dashboard-4';
+// @import './dashboards/dashboard-5';
+// @import './dashboards/dashboard-6';
+// @import './dashboards/dashboard-7';
+// @import './dashboards/dashboard-8';
+// @import './dashboards/dashboard-9';
+// @import './dashboards/dashboard-11';
 
 @import './tailwind/custom';
 @import './tailwind/buttons';
@@ -162,14 +206,23 @@ Background Image
 @import './custom/notifications';
 
 @import './switcher/classic-page-style';
-@import './switcher/boxed';
-@import './switcher/menu-scrollable';
-@import './switcher/header-scrollable';
-@import './switcher/closed_menu';
-@import './switcher/icon-overlay';
-@import './switcher/icontext';
-@import './switcher/detached_menu';
-@import './switcher/double_menu';
-@import './switcher/menu-styles';
-@import './switcher/header-styles';
-@import './switcher/bg-img-styles';
+// @import './switcher/boxed';
+// @import './switcher/menu-scrollable';
+// @import './switcher/header-scrollable';
+// @import './switcher/closed_menu';
+// @import './switcher/icon-overlay';
+// @import './switcher/icontext';
+// @import './switcher/detached_menu';
+// @import './switcher/double_menu';
+// @import './switcher/menu-styles';
+// @import './switcher/header-styles';
+// @import './switcher/bg-img-styles';
+@import '../components/themes/tailwind-light/theme.css';
+@import './primeng.css';
+// .p-datepicker td > span {
+//   width: 20px !important;
+//   height: 20px !important;
+// }
+.p-calendar {
+  width: 100%;
+}

@@ -26,14 +26,16 @@
         <ng-container *ngFor="let menu of pagesMenu$ | async">
           <li class="slide__category"><span class="category-name">{{menu.group}}</span>
           </li>
-          <li class="slide has-sub" *ngFor="let item of menu.items">
+          <li class="slide has-sub" *ngFor="let item of menu?.items">
             <a routerLink="{{ item.route }}" class="side-menu__item" [ngClass]="item.active ?'active':''">
               <svg-icon src="{{ item.icon }}" [svgClass]="'side-menu__icon'"> </svg-icon>
 
               <span class="side-menu__label">{{item.label}}</span>
-              <i class="ri ri-arrow-right-s-line side-menu__angle" *ngIf="item?.children!.length> 0"></i>
+              <ng-container *ngIf="item?.length> 0">
+                <i class="ri ri-arrow-right-s-line side-menu__angle" *ngIf="item?.children!.length> 0"></i>
+              </ng-container>
             </a>
-            <ng-container *ngFor="let child of item.children">
+            <ng-container *ngFor="let child of item?.children">
               <ul class="slide-menu child1" [ngClass]="child.active ?'active expanded':''">
                 <li class="slide side-menu__label1"><a href="javascript:void(0)">Dashboards</a></li>
                 <li class="slide"><a href="index.html" class="side-menu__item">{{child.label}}</a></li>

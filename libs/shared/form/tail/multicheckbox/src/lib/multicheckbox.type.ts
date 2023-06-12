@@ -57,6 +57,19 @@ export interface FormlyMultiCheckboxFieldConfig
                 [disabled]="formControl.disabled || option.disabled"
                 (change)="onChange(option.value, $any($event.target).checked)"
               />
+              <!-- <p-checkbox
+                name="group"
+                class="form-checkbox"
+                for="id + '_' + i"
+                [id]="id + '_' + i"
+                [name]="field.name || id"
+                multiple
+                [value]="option.value"
+                [inputId]="option.value"
+                [formlyAttributes]="field"
+                [disabled]="formControl.disabled || option.disabled"
+                (change)="onChange(option.value, $any($event.target).checked)"
+              /> -->
             </div>
             <label
               for="id + '_' + i"

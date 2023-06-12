@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "es2022",
+    "target": "es2022",
+    "baseUrl": ".",
+    "stripInternal": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "outDir": "../build",
+    "rootDir": ".",
+    "lib": [
+        "es2022",
+        "dom"
+    ],
+    "skipLibCheck": true,
+    "types": [],
+    "paths": {
+      "@primeng/*": ["libs/shared/ui/primeng/*/public_api"]
+    }
+},
+  "exclude": ["src/**/*.spec.ts", "jest.config.ts", "src/**/*.test.ts"],
+  "include": ["primeng/**/*.ts"],
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": false,
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true,
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "flatModuleOutFile": "primeng.js",
+    "flatModuleId": "primeng"
+},
+"files": [
+    "./public_api.ts"
+]
+}

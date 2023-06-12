@@ -1,7 +1,9 @@
 /* eslint-disable @nx/enforce-module-boundaries */
 import { NgModule } from '@angular/core';
+import { FormlyAutoCompleteModule } from '@app/form/tail/autocomplete';
 import { FormlyTailwindButtonModule } from '@app/form/tail/button';
 import { FormlyTailwindCheckboxModule } from '@app/form/tail/checkbox';
+import { FormlyDatepickerModule } from '@app/form/tail/datetime';
 import { FormlyTailwindFormFieldModule } from '@app/form/tail/form-field';
 import { FormlyTailwindInputModule } from '@app/form/tail/input';
 import { FormlyTailwindMultiCheckboxModule } from '@app/form/tail/multicheckbox';
@@ -28,6 +30,8 @@ import { FormlyTailwindTextAreaModule } from '@app/form/tail/textarea';
     FormlyTailwindTableModule,
     FormlyTailwindMultiCheckboxModule,
     FormlyTailwindButtonModule,
+    FormlyDatepickerModule,
+    FormlyAutoCompleteModule,
   ],
 })
 export class FormlyTailwindModule {}

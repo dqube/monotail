@@ -12,5 +12,10 @@
   <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
   <button type="submit" class="ti-btn ti-btn-primary">Save</button>
   <button type="submit" class="ti-btn ti-btn-secondary">Cancel</button>
+  <button pButton pRipple label="Submit" class="p-button-success"></button>
 
 </form>
+
+<div class="card flex justify-content-center">
+  <p-listbox [options]="cities" optionLabel="name" [style]="{'width':'15rem'}"></p-listbox>
+</div>

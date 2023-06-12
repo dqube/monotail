@@ -73,7 +73,11 @@
           "libs/shared/form/tail/multicheckbox/**/*.ts",
           "libs/shared/form/tail/multicheckbox/**/*.html",
           "libs/shared/form/tail/button/**/*.ts",
-          "libs/shared/form/tail/button/**/*.html"
+          "libs/shared/form/tail/button/**/*.html",
+          "libs/shared/form/tail/datetime/**/*.ts",
+          "libs/shared/form/tail/datetime/**/*.html",
+          "libs/shared/form/tail/autocomplete/**/*.ts",
+          "libs/shared/form/tail/autocomplete/**/*.html"
         ]
       }
     }

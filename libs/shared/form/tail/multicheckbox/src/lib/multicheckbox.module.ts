@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@app/form/core';
 import { FormlySelectModule } from '@app/form/core/select';
 import { FormlyTailwindFormFieldModule } from '@app/form/tail/form-field';
-
+import { CheckboxModule } from '@primeng/checkbox';
 import { FormlyFieldMultiCheckbox } from './multicheckbox.type';
 
 @NgModule({
@@ -12,7 +12,7 @@ import { FormlyFieldMultiCheckbox } from './multicheckbox.type';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-
+    CheckboxModule,
     FormlyTailwindFormFieldModule,
     FormlySelectModule,
     FormlyModule.forChild({

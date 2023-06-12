@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormlyFieldConfig, FormlyFormOptions } from '@app/form/core';
 interface auth {
@@ -13,12 +13,29 @@ interface member {
   age: number;
   description: string;
 }
+interface City {
+  name: string;
+  code: string;
+}
 @Component({
   selector: 'app-auth-detail',
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.scss'],
 })
-export class DetailComponent {
+export class DetailComponent implements OnInit {
+  cities: City[] = [];
+
+  selectedCity!: City;
+
+  ngOnInit() {
+    this.cities = [
+      { name: 'New York', code: 'NY' },
+      { name: 'Rome', code: 'RM' },
+      { name: 'London', code: 'LDN' },
+      { name: 'Istanbul', code: 'IST' },
+      { name: 'Paris', code: 'PRS' },
+    ];
+  }
   form = new FormGroup({});
   model: auth = {
     email: 'email@gmail.com',
@@ -267,6 +284,47 @@ export class DetailComponent {
             required: true,
             cols: 1,
             rows: 5,
+          },
+        },
+        {
+          key: 'datepicker',
+          type: 'datepicker',
+          props: {
+            label: 'Datepicker',
+            placeholder: 'Placeholder',
+            description: 'Description',
+            dateFormat: 'yy/mm/dd',
+            hourFormat: '24',
+            numberOfMonths: 1,
+            selectionMode: 'single',
+            required: true,
+            readonlyInput: false,
+            showTime: false,
+            showButtonBar: true,
+            showIcon: true,
+            showOtherMonths: true,
+            selectOtherMonths: false,
+            monthNavigator: false,
+            yearNavigator: false,
+            yearRange: '2020:2030',
+            inline: false,
+          },
+        },
+        {
+          key: 'city',
+          type: 'autocomplete',
+          props: {
+            label: 'City name',
+            placeholder: 'Enter city',
+            options: [
+              { value: 1, label: 'Option 1' },
+              { value: 2, label: 'Option 2' },
+              { value: 3, label: 'Option 3' },
+              { value: 4, label: 'Option 4', disabled: true },
+            ],
+            // change: () => {
+            //   alert('on change triggered');
+            // },
           },
         },
         {

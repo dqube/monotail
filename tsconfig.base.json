@@ -21,9 +21,15 @@
       "@app/form/core": ["libs/shared/form/core/src/index.ts"],
       "@app/form/core/select": ["libs/shared/form/core/select/src/index.ts"],
       "@app/form/tail": ["libs/shared/form/tail/src/index.ts"],
+      "@app/form/tail/autocomplete": [
+        "libs/shared/form/tail/autocomplete/src/index.ts"
+      ],
       "@app/form/tail/button": ["libs/shared/form/tail/button/src/index.ts"],
       "@app/form/tail/checkbox": [
         "libs/shared/form/tail/checkbox/src/index.ts"
+      ],
+      "@app/form/tail/datetime": [
+        "libs/shared/form/tail/datetime/src/index.ts"
       ],
       "@app/form/tail/form-field": [
         "libs/shared/form/tail/form-field/src/index.ts"
@@ -55,7 +61,318 @@
       "@app/ui": ["libs/shared/ui/components/src/index.ts"],
       "@app/ui/navbar": ["libs/shared/ui/components/navbar/src/index.ts"],
       "@app/ui/select": ["libs/shared/ui/components/select/src/index.ts"],
-      "@app/ui/sidebar": ["libs/shared/ui/components/sidebar/src/index.ts"]
+      "@app/ui/sidebar": ["libs/shared/ui/components/sidebar/src/index.ts"],
+      "@primeng": ["libs/shared/ui/primeng/public_api.ts"],
+      "@primeng/accordion": ["libs/shared/ui/primeng/accordion/public_api.ts"],
+      "@primeng/animate": ["libs/shared/ui/primeng/animate/public_api.ts"],
+      "@primeng/api": ["libs/shared/ui/primeng/api/public_api.ts"],
+      "@primeng/autocomplete": [
+        "libs/shared/ui/primeng/autocomplete/public_api.ts"
+      ],
+      "@primeng/autofocus": ["libs/shared/ui/primeng/autofocus/public_api.ts"],
+      "@primeng/avatar": ["libs/shared/ui/primeng/avatar/public_api.ts"],
+      "@primeng/avatargroup": [
+        "libs/shared/ui/primeng/avatargroup/public_api.ts"
+      ],
+      "@primeng/badge": ["libs/shared/ui/primeng/badge/public_api.ts"],
+      "@primeng/baseicon": ["libs/shared/ui/primeng/baseicon/public_api.ts"],
+      "@primeng/blockui": ["libs/shared/ui/primeng/blockui/public_api.ts"],
+      "@primeng/breadcrumb": [
+        "libs/shared/ui/primeng/breadcrumb/public_api.ts"
+      ],
+      "@primeng/button": ["libs/shared/ui/primeng/button/public_api.ts"],
+      "@primeng/calendar": ["libs/shared/ui/primeng/calendar/public_api.ts"],
+      "@primeng/card": ["libs/shared/ui/primeng/card/public_api.ts"],
+      "@primeng/carousel": ["libs/shared/ui/primeng/carousel/public_api.ts"],
+      "@primeng/cascadeselect": [
+        "libs/shared/ui/primeng/cascadeselect/public_api.ts"
+      ],
+      "@primeng/checkbox": ["libs/shared/ui/primeng/checkbox/public_api.ts"],
+      "@primeng/chip": ["libs/shared/ui/primeng/chip/public_api.ts"],
+      "@primeng/chips": ["libs/shared/ui/primeng/chips/public_api.ts"],
+      "@primeng/colorpicker": [
+        "libs/shared/ui/primeng/colorpicker/public_api.ts"
+      ],
+      "@primeng/confirmdialog": [
+        "libs/shared/ui/primeng/confirmdialog/public_api.ts"
+      ],
+      "@primeng/confirmpopup": [
+        "libs/shared/ui/primeng/confirmpopup/public_api.ts"
+      ],
+      "@primeng/contextmenu": [
+        "libs/shared/ui/primeng/contextmenu/public_api.ts"
+      ],
+      "@primeng/dataview": ["libs/shared/ui/primeng/dataview/public_api.ts"],
+      "@primeng/defer": ["libs/shared/ui/primeng/defer/public_api.ts"],
+      "@primeng/dialog": ["libs/shared/ui/primeng/dialog/public_api.ts"],
+      "@primeng/divider": ["libs/shared/ui/primeng/divider/public_api.ts"],
+      "@primeng/dock": ["libs/shared/ui/primeng/dock/public_api.ts"],
+      "@primeng/dom": ["libs/shared/ui/primeng/dom/public_api.ts"],
+      "@primeng/dragdrop": ["libs/shared/ui/primeng/dragdrop/public_api.ts"],
+      "@primeng/dropdown": ["libs/shared/ui/primeng/dropdown/public_api.ts"],
+      "@primeng/dynamicdialog": [
+        "libs/shared/ui/primeng/dynamicdialog/public_api.ts"
+      ],
+      "@primeng/editor": ["libs/shared/ui/primeng/editor/public_api.ts"],
+      "@primeng/fieldset": ["libs/shared/ui/primeng/fieldset/public_api.ts"],
+      "@primeng/fileupload": [
+        "libs/shared/ui/primeng/fileupload/public_api.ts"
+      ],
+      "@primeng/focustrap": ["libs/shared/ui/primeng/focustrap/public_api.ts"],
+      "@primeng/galleria": ["libs/shared/ui/primeng/galleria/public_api.ts"],
+      "@primeng/icon": ["libs/shared/ui/primeng/icon/public_api.ts"],
+      "@primeng/icons/angledoubledown": [
+        "libs/shared/ui/primeng/icons/angledoubledown/public_api.ts"
+      ],
+      "@primeng/icons/angledoubleleft": [
+        "libs/shared/ui/primeng/icons/angledoubleleft/public_api.ts"
+      ],
+      "@primeng/icons/angledoubleright": [
+        "libs/shared/ui/primeng/icons/angledoubleright/public_api.ts"
+      ],
+      "@primeng/icons/angledoubleup": [
+        "libs/shared/ui/primeng/icons/angledoubleup/public_api.ts"
+      ],
+      "@primeng/icons/angledown": [
+        "libs/shared/ui/primeng/icons/angledown/public_api.ts"
+      ],
+      "@primeng/icons/angleleft": [
+        "libs/shared/ui/primeng/icons/angleleft/public_api.ts"
+      ],
+      "@primeng/icons/angleright": [
+        "libs/shared/ui/primeng/icons/angleright/public_api.ts"
+      ],
+      "@primeng/icons/angleup": [
+        "libs/shared/ui/primeng/icons/angleup/public_api.ts"
+      ],
+      "@primeng/icons/arrowdown": [
+        "libs/shared/ui/primeng/icons/arrowdown/public_api.ts"
+      ],
+      "@primeng/icons/arrowdownleft": [
+        "libs/shared/ui/primeng/icons/arrowdownleft/public_api.ts"
+      ],
+      "@primeng/icons/arrowdownright": [
+        "libs/shared/ui/primeng/icons/arrowdownright/public_api.ts"
+      ],
+      "@primeng/icons/arrowleft": [
+        "libs/shared/ui/primeng/icons/arrowleft/public_api.ts"
+      ],
+      "@primeng/icons/arrowright": [
+        "libs/shared/ui/primeng/icons/arrowright/public_api.ts"
+      ],
+      "@primeng/icons/arrowup": [
+        "libs/shared/ui/primeng/icons/arrowup/public_api.ts"
+      ],
+      "@primeng/icons/ban": ["libs/shared/ui/primeng/icons/ban/public_api.ts"],
+      "@primeng/icons/bars": [
+        "libs/shared/ui/primeng/icons/bars/public_api.ts"
+      ],
+      "@primeng/icons/calendar": [
+        "libs/shared/ui/primeng/icons/calendar/public_api.ts"
+      ],
+      "@primeng/icons/caretleft": [
+        "libs/shared/ui/primeng/icons/caretleft/public_api.ts"
+      ],
+      "@primeng/icons/caretright": [
+        "libs/shared/ui/primeng/icons/caretright/public_api.ts"
+      ],
+      "@primeng/icons/check": [
+        "libs/shared/ui/primeng/icons/check/public_api.ts"
+      ],
+      "@primeng/icons/chevrondown": [
+        "libs/shared/ui/primeng/icons/chevrondown/public_api.ts"
+      ],
+      "@primeng/icons/chevronleft": [
+        "libs/shared/ui/primeng/icons/chevronleft/public_api.ts"
+      ],
+      "@primeng/icons/chevronright": [
+        "libs/shared/ui/primeng/icons/chevronright/public_api.ts"
+      ],
+      "@primeng/icons/chevronup": [
+        "libs/shared/ui/primeng/icons/chevronup/public_api.ts"
+      ],
+      "@primeng/icons/exclamationtriangle": [
+        "libs/shared/ui/primeng/icons/exclamationtriangle/public_api.ts"
+      ],
+      "@primeng/icons/eye": ["libs/shared/ui/primeng/icons/eye/public_api.ts"],
+      "@primeng/icons/eyeslash": [
+        "libs/shared/ui/primeng/icons/eyeslash/public_api.ts"
+      ],
+      "@primeng/icons/filter": [
+        "libs/shared/ui/primeng/icons/filter/public_api.ts"
+      ],
+      "@primeng/icons/filterslash": [
+        "libs/shared/ui/primeng/icons/filterslash/public_api.ts"
+      ],
+      "@primeng/icons/home": [
+        "libs/shared/ui/primeng/icons/home/public_api.ts"
+      ],
+      "@primeng/icons/infocircle": [
+        "libs/shared/ui/primeng/icons/infocircle/public_api.ts"
+      ],
+      "@primeng/icons/minus": [
+        "libs/shared/ui/primeng/icons/minus/public_api.ts"
+      ],
+      "@primeng/icons/pencil": [
+        "libs/shared/ui/primeng/icons/pencil/public_api.ts"
+      ],
+      "@primeng/icons/plus": [
+        "libs/shared/ui/primeng/icons/plus/public_api.ts"
+      ],
+      "@primeng/icons/refresh": [
+        "libs/shared/ui/primeng/icons/refresh/public_api.ts"
+      ],
+      "@primeng/icons/search": [
+        "libs/shared/ui/primeng/icons/search/public_api.ts"
+      ],
+      "@primeng/icons/searchminus": [
+        "libs/shared/ui/primeng/icons/searchminus/public_api.ts"
+      ],
+      "@primeng/icons/searchplus": [
+        "libs/shared/ui/primeng/icons/searchplus/public_api.ts"
+      ],
+      "@primeng/icons/sortalt": [
+        "libs/shared/ui/primeng/icons/sortalt/public_api.ts"
+      ],
+      "@primeng/icons/sortamountdown": [
+        "libs/shared/ui/primeng/icons/sortamountdown/public_api.ts"
+      ],
+      "@primeng/icons/sortamountupalt": [
+        "libs/shared/ui/primeng/icons/sortamountupalt/public_api.ts"
+      ],
+      "@primeng/icons/spinner": [
+        "libs/shared/ui/primeng/icons/spinner/public_api.ts"
+      ],
+      "@primeng/icons/star": [
+        "libs/shared/ui/primeng/icons/star/public_api.ts"
+      ],
+      "@primeng/icons/starfill": [
+        "libs/shared/ui/primeng/icons/starfill/public_api.ts"
+      ],
+      "@primeng/icons/thlarge": [
+        "libs/shared/ui/primeng/icons/thlarge/public_api.ts"
+      ],
+      "@primeng/icons/times": [
+        "libs/shared/ui/primeng/icons/times/public_api.ts"
+      ],
+      "@primeng/icons/timescircle": [
+        "libs/shared/ui/primeng/icons/timescircle/public_api.ts"
+      ],
+      "@primeng/icons/trash": [
+        "libs/shared/ui/primeng/icons/trash/public_api.ts"
+      ],
+      "@primeng/icons/undo": [
+        "libs/shared/ui/primeng/icons/undo/public_api.ts"
+      ],
+      "@primeng/icons/upload": [
+        "libs/shared/ui/primeng/icons/upload/public_api.ts"
+      ],
+      "@primeng/icons/windowmaximize": [
+        "libs/shared/ui/primeng/icons/windowmaximize/public_api.ts"
+      ],
+      "@primeng/icons/windowminimize": [
+        "libs/shared/ui/primeng/icons/windowminimize/public_api.ts"
+      ],
+      "@primeng/image": ["libs/shared/ui/primeng/image/public_api.ts"],
+      "@primeng/inplace": ["libs/shared/ui/primeng/inplace/public_api.ts"],
+      "@primeng/inputmask": ["libs/shared/ui/primeng/inputmask/public_api.ts"],
+      "@primeng/inputnumber": [
+        "libs/shared/ui/primeng/inputnumber/public_api.ts"
+      ],
+      "@primeng/inputswitch": [
+        "libs/shared/ui/primeng/inputswitch/public_api.ts"
+      ],
+      "@primeng/inputtext": ["libs/shared/ui/primeng/inputtext/public_api.ts"],
+      "@primeng/inputtextarea": [
+        "libs/shared/ui/primeng/inputtextarea/public_api.ts"
+      ],
+      "@primeng/keyfilter": ["libs/shared/ui/primeng/keyfilter/public_api.ts"],
+      "@primeng/knob": ["libs/shared/ui/primeng/knob/public_api.ts"],
+      "@primeng/listbox": ["libs/shared/ui/primeng/listbox/public_api.ts"],
+      "@primeng/megamenu": ["libs/shared/ui/primeng/megamenu/public_api.ts"],
+      "@primeng/menu": ["libs/shared/ui/primeng/menu/public_api.ts"],
+      "@primeng/menubar": ["libs/shared/ui/primeng/menubar/public_api.ts"],
+      "@primeng/message": ["libs/shared/ui/primeng/message/public_api.ts"],
+      "@primeng/messages": ["libs/shared/ui/primeng/messages/public_api.ts"],
+      "@primeng/multiselect": [
+        "libs/shared/ui/primeng/multiselect/public_api.ts"
+      ],
+      "@primeng/orderlist": ["libs/shared/ui/primeng/orderlist/public_api.ts"],
+      "@primeng/organizationchart": [
+        "libs/shared/ui/primeng/organizationchart/public_api.ts"
+      ],
+      "@primeng/overlay": ["libs/shared/ui/primeng/overlay/public_api.ts"],
+      "@primeng/overlaypanel": [
+        "libs/shared/ui/primeng/overlaypanel/public_api.ts"
+      ],
+      "@primeng/paginator": ["libs/shared/ui/primeng/paginator/public_api.ts"],
+      "@primeng/panel": ["libs/shared/ui/primeng/panel/public_api.ts"],
+      "@primeng/panelmenu": ["libs/shared/ui/primeng/panelmenu/public_api.ts"],
+      "@primeng/password": ["libs/shared/ui/primeng/password/public_api.ts"],
+      "@primeng/picklist": ["libs/shared/ui/primeng/picklist/public_api.ts"],
+      "@primeng/progressbar": [
+        "libs/shared/ui/primeng/progressbar/public_api.ts"
+      ],
+      "@primeng/progressspinner": [
+        "libs/shared/ui/primeng/progressspinner/public_api.ts"
+      ],
+      "@primeng/radiobutton": [
+        "libs/shared/ui/primeng/radiobutton/public_api.ts"
+      ],
+      "@primeng/rating": ["libs/shared/ui/primeng/rating/public_api.ts"],
+      "@primeng/ripple": ["libs/shared/ui/primeng/ripple/public_api.ts"],
+      "@primeng/scroller": ["libs/shared/ui/primeng/scroller/public_api.ts"],
+      "@primeng/scrollpanel": [
+        "libs/shared/ui/primeng/scrollpanel/public_api.ts"
+      ],
+      "@primeng/scrolltop": ["libs/shared/ui/primeng/scrolltop/public_api.ts"],
+      "@primeng/selectbutton": [
+        "libs/shared/ui/primeng/selectbutton/public_api.ts"
+      ],
+      "@primeng/sidebar": ["libs/shared/ui/primeng/sidebar/public_api.ts"],
+      "@primeng/skeleton": ["libs/shared/ui/primeng/skeleton/public_api.ts"],
+      "@primeng/slidemenu": ["libs/shared/ui/primeng/slidemenu/public_api.ts"],
+      "@primeng/slider": ["libs/shared/ui/primeng/slider/public_api.ts"],
+      "@primeng/speeddial": ["libs/shared/ui/primeng/speeddial/public_api.ts"],
+      "@primeng/spinner": ["libs/shared/ui/primeng/spinner/public_api.ts"],
+      "@primeng/splitbutton": [
+        "libs/shared/ui/primeng/splitbutton/public_api.ts"
+      ],
+      "@primeng/splitter": ["libs/shared/ui/primeng/splitter/public_api.ts"],
+      "@primeng/steps": ["libs/shared/ui/primeng/steps/public_api.ts"],
+      "@primeng/styleclass": [
+        "libs/shared/ui/primeng/styleclass/public_api.ts"
+      ],
+      "@primeng/table": ["libs/shared/ui/primeng/table/public_api.ts"],
+      "@primeng/tabmenu": ["libs/shared/ui/primeng/tabmenu/public_api.ts"],
+      "@primeng/tabview": ["libs/shared/ui/primeng/tabview/public_api.ts"],
+      "@primeng/tag": ["libs/shared/ui/primeng/tag/public_api.ts"],
+      "@primeng/terminal": ["libs/shared/ui/primeng/terminal/public_api.ts"],
+      "@primeng/tieredmenu": [
+        "libs/shared/ui/primeng/tieredmenu/public_api.ts"
+      ],
+      "@primeng/timeline": ["libs/shared/ui/primeng/timeline/public_api.ts"],
+      "@primeng/toast": ["libs/shared/ui/primeng/toast/public_api.ts"],
+      "@primeng/togglebutton": [
+        "libs/shared/ui/primeng/togglebutton/public_api.ts"
+      ],
+      "@primeng/toolbar": ["libs/shared/ui/primeng/toolbar/public_api.ts"],
+      "@primeng/tooltip": ["libs/shared/ui/primeng/tooltip/public_api.ts"],
+      "@primeng/tree": ["libs/shared/ui/primeng/tree/public_api.ts"],
+      "@primeng/treeselect": [
+        "libs/shared/ui/primeng/treeselect/public_api.ts"
+      ],
+      "@primeng/treetable": ["libs/shared/ui/primeng/treetable/public_api.ts"],
+      "@primeng/tristatecheckbox": [
+        "libs/shared/ui/primeng/tristatecheckbox/public_api.ts"
+      ],
+      "@primeng/ts-helpers": [
+        "libs/shared/ui/primeng/ts-helpers/public_api.ts"
+      ],
+      "@primeng/utils": ["libs/shared/ui/primeng/utils/public_api.ts"],
+      "@primeng/virtualscroller": [
+        "libs/shared/ui/primeng/virtualscroller/public_api.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

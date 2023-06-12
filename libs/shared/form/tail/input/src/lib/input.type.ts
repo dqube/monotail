@@ -26,22 +26,23 @@ export interface FormlyInputFieldConfig extends FormlyFieldConfig<InputProps> {
       /> -->
     <ng-template #fieldTypeTemplate>
       <input
+        pInputText
         *ngIf="type !== 'number'; else numberTmp"
         [placeholder]="props.placeholder"
         [type]="type"
         [formControl]="formControl"
         [formlyAttributes]="field"
         [class.border-danger]="showError"
-        class="my-auto form-input hover:border-primary focus:border-primary"
+        class="hover:border-primary focus:border-primary my-auto"
       />
       <ng-template #numberTmp>
-        <input
+        <p-inputNumber
+          inputId="integeronly"
           [placeholder]="props.placeholder"
-          [type]="type"
           [formControl]="formControl"
           [formlyAttributes]="field"
           [class.border-danger]="showError"
-          class="my-auto form-input hover:border-primary focus:border-primary"
+          class="hover:border-primary focus:border-primary my-auto"
         />
       </ng-template>
     </ng-template>
