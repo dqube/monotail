@@ -277,4 +277,73 @@
   .menu-toggle:checked ~ .menu-item .menu-icon {
     @apply rotate-90;
   }
+  .modal {
+    @apply invisible fixed  inset-0  z-[60] flex  items-center  justify-center overscroll-none bg-black/60 px-4  text-left opacity-0 transition-all;
+  }
+
+  .modal-overlay {
+    @apply absolute inset-0;
+  }
+
+  .modal-state {
+    @apply hidden;
+  }
+  .modal-state:checked + .modal {
+    @apply visible  translate-y-0 scale-100 opacity-100;
+  }
+
+  html:has(.modal-state:checked) {
+    @apply overflow-hidden;
+  }
+
+  .modal-state:checked + .modal .modal-content {
+    @apply translate-y-0 scale-100;
+  }
+
+  .modal-content {
+    @apply relative h-max max-h-[calc(100%-10%)] max-w-lg scale-90  overflow-auto rounded-xl bg-gray-100 p-6 transition duration-75 ease-in-out;
+  }
+
+  .drawer-toggle {
+    @apply absolute h-0 w-0 appearance-none opacity-0;
+  }
+
+  html:has(.drawer-toggle:checked) {
+    @apply overflow-hidden;
+  }
+
+  .drawer {
+    @apply fixed left-0 top-0 z-[9999] h-screen w-full max-w-xs -translate-x-full overflow-auto bg-gray-100 transition-transform duration-150 ease-out;
+  }
+
+  .drawer-right {
+    @apply left-auto right-0 translate-x-full;
+  }
+
+  .drawer-top {
+    transform: translateY(-100%);
+    @apply bottom-0 top-0 h-fit max-h-screen w-full max-w-full;
+  }
+
+  .drawer-bottom {
+    transform: translateY(100%);
+    @apply bottom-0 top-auto h-fit max-h-screen w-full max-w-full;
+  }
+
+  .drawer-content {
+    @apply p-4;
+  }
+
+  .drawer-toggle:checked ~ .drawer {
+    transform: translateX(0);
+  }
+
+  .overlay {
+    transition: visibility 0.15s ease-out, opacity 0.15s ease-out;
+    @apply invisible fixed left-0 top-0 z-[9998] h-screen w-full bg-black/60  opacity-0;
+  }
+
+  .drawer-toggle:checked ~ .overlay {
+    @apply visible opacity-100;
+  }
 }

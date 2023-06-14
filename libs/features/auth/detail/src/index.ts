@@ -4,3 +4,5 @@ export * from './lib/lib.routes';
 export * from './lib/lib.routes';
 
 export * from './lib/detail.component';
+
+export * from './lib/test.component';

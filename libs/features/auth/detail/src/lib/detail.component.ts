@@ -1,6 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  TemplateRef,
+  ViewChild,
+  inject,
+} from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormlyFieldConfig, FormlyFormOptions } from '@app/form/core';
+import { DialogService } from '@app/ui/dialog';
+import { DrawerService } from '@primeng/drawer';
+import { TestComponent } from './test.component';
 interface auth {
   email: string;
   firstName?: string;
@@ -23,10 +32,21 @@ interface City {
   styleUrls: ['./detail.component.scss'],
 })
 export class DetailComponent implements OnInit {
+  private dialog = inject(DialogService);
+  @ViewChild('editTmpl', { static: false })
+  editTmpl!: TemplateRef<any>;
+  constructor(private drawerService: DrawerService) {}
   cities: City[] = [];
 
   selectedCity!: City;
-
+  openmodal() {
+    const dialogRef = this.dialog.open(TestComponent, {
+      // data is typed based on the passed generic
+      data: {
+        title: 'test',
+      },
+    });
+  }
   ngOnInit() {
     this.cities = [
       { name: 'New York', code: 'NY' },
@@ -35,6 +55,23 @@ export class DetailComponent implements OnInit {
       { name: 'Istanbul', code: 'IST' },
       { name: 'Paris', code: 'PRS' },
     ];
+  }
+  openDrawer(
+    direction = 'left',
+    size?,
+    closeOnOutsideClick = true,
+    template = this.editTmpl,
+    isRoot = true,
+    parentContainer?: any
+  ) {
+    this.drawerService.create({
+      template,
+      size,
+      context: 'Alert Everyone!',
+      closeOnOutsideClick,
+      parentContainer,
+      isRoot,
+    });
   }
   form = new FormGroup({});
   model: auth = {

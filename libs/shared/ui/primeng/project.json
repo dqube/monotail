@@ -28,7 +28,9 @@
       "options": {
         "lintFilePatterns": [
           "libs/shared/ui/primeng/**/*.ts",
-          "libs/shared/ui/primeng/**/*.html"
+          "libs/shared/ui/primeng/**/*.html",
+          "libs/shared/ui/primeng/drawer/**/*.ts",
+          "libs/shared/ui/primeng/drawer/**/*.html"
         ]
       }
     }

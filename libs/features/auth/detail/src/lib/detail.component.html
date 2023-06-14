@@ -16,6 +16,61 @@
 
 </form>
 
+<button type="button" class="ti-btn ti-btn-secondary" (click)="openmodal()">
+  Open Modal
+</button>
 <div class="card flex justify-content-center">
   <p-listbox [options]="cities" optionLabel="name" [style]="{'width':'15rem'}"></p-listbox>
+</div>
+<button type="button" (click)="openDrawer('bottom', undefined, false, editTmpl2)">
+  Open Bottom Drawer
+</button>
+
+<ng-template #editTmpl2 let-context="context" let-close="close">
+
+  <section class="section">
+    <h1>Attack Type: Malware</h1>
+    <button type="button" class="btn" (click)="openDrawer(undefined, undefined, false, editTmpl2)">
+      Open Details
+    </button>
+    <button type="button" class="btn" (click)="close.emit(true)">
+      Close
+    </button>
+  </section>
+</ng-template>
+
+<!-- <label class="btn btn-primary" for="modal-2">Open Modal</label>
+
+<input class="modal-state" id="modal-2" type="checkbox" />
+<div class="modal w-screen">
+  <label class="modal-overlay" for="modal-2"></label>
+  <div class="modal-content flex flex-col gap-5 max-w-3xl">
+    <label for="modal-2" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+    <h2 class="text-xl">Modal title 2</h2>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum voluptate ratione dicta. Maxime
+      cupiditate, est commodi consectetur earum iure, optio, obcaecati in nulla saepe maiores nobis iste quasi
+      alias!</span>
+    <div class="flex gap-3">
+      <button class="btn btn-error btn-block">Delete</button>
+      <button class="btn btn-block">Cancel</button>
+    </div>
+  </div>
+</div> -->
+
+<input type="checkbox" id="drawer-right" class="drawer-toggle" />
+
+<label for="drawer-right" class="btn btn-primary">Open Right</label>
+<label class="overlay" for="drawer-right"></label>
+<div class="drawer drawer-right">
+  <div class="drawer-content pt-10 flex flex-col h-full">
+    <label for="drawer-right" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
+    <div>
+      <h2 class="text-xl font-medium">Create your account</h2>
+      <input class="input py-1.5 my-3" placeholder="Type here..." />
+    </div>
+    <div class="h-full flex flex-row justify-end items-end gap-2">
+      <button class="btn btn-ghost">Cancel</button>
+      <button class="btn btn-primary">Create</button>
+    </div>
+  </div>
 </div>

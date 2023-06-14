@@ -59,6 +59,8 @@
       "@app/shared/assets": ["libs/shared/assets/src/index.ts"],
       "@app/shared/environments": ["libs/shared/environments/src/index.ts"],
       "@app/ui": ["libs/shared/ui/components/src/index.ts"],
+      "@app/ui/dialog": ["libs/shared/ui/components/dialog/src/index.ts"],
+      "@app/ui/drawer": ["libs/shared/ui/components/drawer/src/index.ts"],
       "@app/ui/navbar": ["libs/shared/ui/components/navbar/src/index.ts"],
       "@app/ui/select": ["libs/shared/ui/components/select/src/index.ts"],
       "@app/ui/sidebar": ["libs/shared/ui/components/sidebar/src/index.ts"],
@@ -109,6 +111,7 @@
       "@primeng/dock": ["libs/shared/ui/primeng/dock/public_api.ts"],
       "@primeng/dom": ["libs/shared/ui/primeng/dom/public_api.ts"],
       "@primeng/dragdrop": ["libs/shared/ui/primeng/dragdrop/public_api.ts"],
+      "@primeng/drawer": ["libs/shared/ui/primeng/drawer/public_api.ts"],
       "@primeng/dropdown": ["libs/shared/ui/primeng/dropdown/public_api.ts"],
       "@primeng/dynamicdialog": [
         "libs/shared/ui/primeng/dynamicdialog/public_api.ts"

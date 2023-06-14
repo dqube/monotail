@@ -49,7 +49,11 @@
           "libs/shared/ui/components/navbar/**/*.ts",
           "libs/shared/ui/components/navbar/**/*.html",
           "libs/shared/ui/components/select/**/*.ts",
-          "libs/shared/ui/components/select/**/*.html"
+          "libs/shared/ui/components/select/**/*.html",
+          "libs/shared/ui/components/dialog/**/*.ts",
+          "libs/shared/ui/components/dialog/**/*.html",
+          "libs/shared/ui/components/drawer/**/*.ts",
+          "libs/shared/ui/components/drawer/**/*.html"
         ]
       }
     }

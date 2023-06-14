@@ -31,8 +31,8 @@
               <svg-icon src="{{ item.icon }}" [svgClass]="'side-menu__icon'"> </svg-icon>
 
               <span class="side-menu__label">{{item.label}}</span>
-              <ng-container *ngIf="item?.length> 0">
-                <i class="ri ri-arrow-right-s-line side-menu__angle" *ngIf="item?.children!.length> 0"></i>
+              <ng-container *ngIf="item">
+                <i class="ri ri-arrow-right-s-line side-menu__angle" *ngIf="item?.children"></i>
               </ng-container>
             </a>
             <ng-container *ngFor="let child of item?.children">
